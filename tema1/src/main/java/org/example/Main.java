@@ -49,11 +49,10 @@ public class Main {
     public static void ejer3(){
         while(true){
             int optionEscollida=lerNumero(getMenu());
-
+            JFileChooser fc=new JFileChooser();
 
             switch (optionEscollida){
                 case 1:
-                    JFileChooser fc=new JFileChooser();
                     fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
                     if (!(fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)){
                         limparConsola(false);
@@ -73,16 +72,13 @@ public class Main {
                     limparConsola(true);
                     continue;
                 case 2:
-                    JFileChooser fc2=new JFileChooser();
-
-                    fc2.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                    if (!(fc2.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
+                    fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                    if (!(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
                         limparConsola(false);
                         continue;
                     }
-                    File directorioGardado2=fc2.getSelectedFile();
-                    System.out.println(fc2.getName());
-                    listarDirectorioRecursivo(fc2.getSelectedFiles(),0);
+                    File directorioGardado2=fc.getSelectedFile();
+                    listarDirectorioRecursivo(directorioGardado2.listFiles(),0);
                     continue;
                 case 3:
 
@@ -142,7 +138,6 @@ public class Main {
 
     private static void listarDirectorioRecursivo(File[] elementos,int nivelArbol){
         for (File elemento:elementos){
-            System.out.println(elemento.getAbsolutePath());
             if (elemento.isFile()){
                 System.out.println(elemento.getName());
                 continue;
