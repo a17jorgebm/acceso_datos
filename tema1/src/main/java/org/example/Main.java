@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.nio.file.Files;
 import java.util.Scanner;
 
 public class Main {
@@ -82,10 +83,49 @@ public class Main {
                     listarDirectorioRecursivo(directorioGardado2.listFiles(),0);
                     continue;
                 case 3:
-
+                    fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+                    if(!(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
+                        limparConsola(false);
+                        continue;
+                    }
+                    File directorioGardado3=fc.getSelectedFile();
+                    System.out.println("Se borrarán los siguientes archivos:");
+                    System.out.println(directorioGardado3.getName());
+                    listarDirectorioRecursivo(directorioGardado3.listFiles(),1);
+                    if (!lerTexto("Estás seguro?(S/N):").toUpperCase().equals("S")){
+                        System.out.println("No se ha borrado nada, tranquilo...");
+                        limparConsola(true);
+                        continue;
+                    }
+                    System.out.println(borrarDirectorioRecursivo(directorioGardado3)
+                            ? "Directorio borrado"
+                            : "Error al borrar el directorio");
+                    limparConsola(true);
                     continue;
                 case 4:
+                    fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                    if(!(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
+                        limparConsola(false);
+                        continue;
+                    }
+                    File directorioGardado4=fc.getSelectedFile();
 
+                    if(!(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
+                        limparConsola(false);
+                        continue;
+                    }
+                    File directorioNovo=fc.getSelectedFile();
+                    String novoNome=JOptionPane.showInputDialog("Introduce el nuevo nombre: ");
+                    if (novoNome==null || novoNome.equals("")){
+                        System.out.println("Non se puido realizar a operación");
+                        limparConsola(true);
+                    }
+
+                    System.out.println(directorioGardado4.renameTo((new File(directorioNovo.getAbsolutePath()+"/"+novoNome)))
+                            ? "Operación realizada con éxito"
+                            : "Non se puido realizar a operación");
+
+                    limparConsola(true);
                     continue;
             }
             System.out.println("Saliendo del programa...");
@@ -152,6 +192,15 @@ public class Main {
             System.out.println(tabuladores+elemento.getName());
             listarDirectorioRecursivo(elemento.listFiles(),++nivelArbol);
         }
+    }
+
+    private static boolean borrarDirectorioRecursivo(File directorio){
+        if (directorio.isDirectory()){
+            for (File elemento:directorio.listFiles()){
+                borrarDirectorioRecursivo(elemento);
+            }
+        }
+        return directorio.delete();
     }
 
     // A PARTIR DE AQUI SON EJERS DE RANDOMACCESSFILE
