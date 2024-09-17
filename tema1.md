@@ -1,3 +1,11 @@
+## Cousas que mirar
+### StringBuilder
+```
+StringBuilder sb= new StringBuilder();
+sb.append("ola son un string");
+sb.toString();
+```
+
 ## 1.1 Acceso a ficheros, flujos, serialización
 
 Clases E/S usadas para traballar con ficheiros NON orientados a flujos. Usase a biblioteca java.IO como java.NIO(new io):
