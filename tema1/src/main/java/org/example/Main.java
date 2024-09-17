@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ejer4();
+        ejer3();
     }
 
     public static void ejer1(){
@@ -139,22 +139,18 @@ public class Main {
 
     private static void listarDirectorioRecursivo(File[] elementos,int nivelArbol){
         StringBuilder tabuladores= new StringBuilder();
+        //según o nivel onde esteamos añadense tabuladores ou non
         for (int i=0;i<nivelArbol;i++){ tabuladores.append("\t"); }
 
         for (File elemento:elementos){
+            //se é un ficheiro simplemente imprimese o nome e saltase a siguiente interacción do bucle
             if (elemento.isFile()){
                 System.out.println(tabuladores+elemento.getName());
                 continue;
             }
+            //se é un directorio imprimese o nome e volvese a ejecutar esta misma función nel, ademais sumase 1 nivel ao nivelArbol
             System.out.println(tabuladores+elemento.getName());
-            for (File directorio:elemento.listFiles()){
-                if (elemento.isDirectory()){
-                    listarDirectorioRecursivo(elemento.listFiles(),++nivelArbol);
-                }
-                else{
-                    System.out.println(tabuladores+elemento.getName());
-                }
-            }
+            listarDirectorioRecursivo(elemento.listFiles(),++nivelArbol);
         }
     }
 
@@ -168,6 +164,8 @@ public class Main {
     Lee el mensaje y muéstralo por consola.
      */
     public static void ejer4(){
+                    /*
+
         try{
             RandomAccessFile ficheiro=new RandomAccessFile("prueba.txt","rwd");
             //escribimos
@@ -180,7 +178,7 @@ public class Main {
             ficheiro.close();
         }catch (IOException e){
             System.out.println("Ocurriu un error: "+e.getMessage());
-        }
+        }*/
     }
 
     /*
@@ -188,7 +186,7 @@ public class Main {
     los números del 1 al 10 y luego los lea desde el archivo. Muestra los números leídos en la consola.
     */
     public static void ejer5(){
-        RandomAccessFile arquivo=new RandomAccessFile("numeros.txt","rw");
+        //RandomAccessFile arquivo=new RandomAccessFile("numeros.txt","rw");
 
     }
 }
