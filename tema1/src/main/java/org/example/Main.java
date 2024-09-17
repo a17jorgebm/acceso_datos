@@ -2,12 +2,13 @@ package org.example;
 
 import javax.swing.*;
 import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //JOptionPane.showMessageDialog();
-        ejer3();
+        ejer4();
     }
 
     public static void ejer1(){
@@ -137,22 +138,57 @@ public class Main {
     }
 
     private static void listarDirectorioRecursivo(File[] elementos,int nivelArbol){
+        StringBuilder tabuladores= new StringBuilder();
+        for (int i=0;i<nivelArbol;i++){ tabuladores.append("\t"); }
+
         for (File elemento:elementos){
             if (elemento.isFile()){
-                System.out.println(elemento.getName());
+                System.out.println(tabuladores+elemento.getName());
                 continue;
             }
-            System.out.println(elemento.getName());
+            System.out.println(tabuladores+elemento.getName());
             for (File directorio:elemento.listFiles()){
-                for (int i=0;i<nivelArbol;i++){ System.out.print("\t"); }
-                System.out.println(directorio.getName());
                 if (elemento.isDirectory()){
                     listarDirectorioRecursivo(elemento.listFiles(),++nivelArbol);
                 }
                 else{
-                    System.out.println(elemento.getName());
+                    System.out.println(tabuladores+elemento.getName());
                 }
             }
         }
+    }
+
+    // A PARTIR DE AQUI SON EJERS DE RANDOMACCESSFILE
+
+    /*
+    Escribe un programa que escriba y lea datos en un archivo usando la clase RandomAccessFile.
+
+    Crea un archivo de texto llamado prueba.txt en el directorio actual de tu proyecto, sólo si no existe.
+    Escribe un programa que cree un objeto RandomAccessFile para el archivo prueba.txt y escriba un mensaje.
+    Lee el mensaje y muéstralo por consola.
+     */
+    public static void ejer4(){
+        try{
+            RandomAccessFile ficheiro=new RandomAccessFile("prueba.txt","rwd");
+            //escribimos
+            String mensajeEscribir=lerTexto("Introduce o texto a incluir no arquivo: ");
+            ficheiro.
+            ficheiro.wr(mensajeEscribir);
+            //leemos
+            ficheiro.seek(0);
+            System.out.println(ficheiro.readUTF());
+            ficheiro.close();
+        }catch (IOException e){
+            System.out.println("Ocurriu un error: "+e.getMessage());
+        }
+    }
+
+    /*
+    Escribe un programa que utilice la clase RandomAccessFile para escribir en un archivo
+    los números del 1 al 10 y luego los lea desde el archivo. Muestra los números leídos en la consola.
+    */
+    public static void ejer5(){
+        RandomAccessFile arquivo=new RandomAccessFile("numeros.txt","rw");
+
     }
 }
