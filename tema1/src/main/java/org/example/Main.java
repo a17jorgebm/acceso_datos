@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //JOptionPane.showMessageDialog();
-        ejer2();
+        ejer3();
     }
 
     public static void ejer1(){
@@ -49,31 +49,53 @@ public class Main {
     public static void ejer3(){
         while(true){
             int optionEscollida=lerNumero(getMenu());
+            JFileChooser fc=new JFileChooser();
 
             switch (optionEscollida){
                 case 1:
+                    fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                    if (!(fc.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)){
+                        limparConsola(false);
+                        continue;
+                    }
+                    File directorioGardado=fc.getSelectedFile();
 
-                    break;
+                    String nomeDirectorio=lerTexto("Introduce o nome do directorio: ");
+                    File novoDirectorio=new File(directorioGardado.getAbsolutePath()+"/"+nomeDirectorio);
+                    if (novoDirectorio.exists()){ //xa comproba que existe tamen
+                        System.out.println("El directorio ya existe!");
+                        limparConsola(true);
+                        continue;
+                    }
+
+                    System.out.println(novoDirectorio.mkdir() ? "Directorio creado!" : "Error al crear el directorio");
+                    limparConsola(true);
+                    continue;
                 case 2:
-
-                    break;
+                    fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                    if (!(fc.showOpenDialog(null)==JFileChooser.APPROVE_OPTION)){
+                        limparConsola(false);
+                        continue;
+                    }
+                    File directorioGardado2=fc.getSelectedFile();
+                    listarDirectorioRecursivo(directorioGardado2.listFiles(),0);
+                    continue;
                 case 3:
 
-                    break;
+                    continue;
                 case 4:
 
-                    break;
-                default:
-
-
+                    continue;
             }
+            System.out.println("Saliendo del programa...");
+            break;
         }
     }
 
     private static String getMenu(){
         StringBuilder sb=new StringBuilder();
 
-        sb.append("Gestor de archivos y directorios\n\n")
+        sb.append("#######Gestor de archivos y directorios#######\n")
                 .append("1.Creación de directorio\n")
                 .append("2.Listar archivos y directorios\n")
                 .append("3.Eliminar archivos o directorios\n")
@@ -83,13 +105,54 @@ public class Main {
         return sb.toString();
     }
 
+    private static void limparConsola(boolean esperar){
+        if (esperar){
+            Scanner sc=new Scanner(System.in);
+            System.out.print("Pulse cualquer tecla para continuar...");
+            sc.nextLine();
+        }
+
+        StringBuilder sb=new StringBuilder();
+        for (int i=0;i<50;i++){
+            sb.append("\r\n");
+        }
+        System.out.print(sb.toString());
+    }
+
     private static int lerNumero(String texto){
-        Scanner ler = new Scanner(texto);
+        System.out.print(texto);
+        Scanner ler = new Scanner(System.in);
 
         if (ler.hasNextInt()){
             return ler.nextInt();
         }else{
-            return lerNumero("Debe ser un número entero!\n"+texto);
+            return lerNumero("Error, debe introducir un número: ");
+        }
+    }
+
+    private static String lerTexto(String texto){
+        System.out.print(texto);
+        Scanner ler = new Scanner(System.in);
+        return ler.nextLine();
+    }
+
+    private static void listarDirectorioRecursivo(File[] elementos,int nivelArbol){
+        for (File elemento:elementos){
+            if (elemento.isFile()){
+                System.out.println(elemento.getName());
+                continue;
+            }
+            System.out.println(elemento.getName());
+            for (File directorio:elemento.listFiles()){
+                for (int i=0;i<nivelArbol;i++){ System.out.print("\t"); }
+                System.out.println(directorio.getName());
+                if (elemento.isDirectory()){
+                    listarDirectorioRecursivo(elemento.listFiles(),++nivelArbol);
+                }
+                else{
+                    System.out.println(elemento.getName());
+                }
+            }
         }
     }
 }
