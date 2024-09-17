@@ -29,3 +29,8 @@ File arquivo=null;
 separadores:
 * java.io.File.`separator`: separador de ruta(`/` en UNIX `\` en WINDOWS)
 * java.io.File.`pathSeparator`: o separador da variable PATH da plataforma(`:` en UNIX `;` en WINDOWS)
+
+...completar cos apuntes❗❗❗
+
+### RandomAccessFile
+
