@@ -14,6 +14,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
+    public static String NOME_FICHEIRO="estudiantes.dat";
 
     public static void main(String[] args){
         while(true) {
@@ -22,10 +23,8 @@ public class Main {
 
             switch (optionEscollida) {
                 case 1:
-                    try (
-                            FileOutputStream ficheiro = new FileOutputStream("ejer1.dat",true);
-                            ObjectOutputStream fo = new ObjectOutputStream(ficheiro);
-                    ) {
+                    File ficheiro=new File(NOME_FICHEIRO);
+                    try{
                         //recollida de datos
                         String novoNome = JOptionPane.showInputDialog("Introduce el nombre: ");
                         if (novoNome == null || novoNome.equals("")) { throw new Exception("Non se pode ter un nome vacío!"); }
@@ -34,27 +33,88 @@ public class Main {
 
                         //crease o obxeto e gardase
                         Persona p=new Persona(novoNome,idade);
-                        fo.writeObject(p);
+
+                        //teño que facelo asi porque senon non podo elegir de que clase é o FileOutputStream dependendo de se o arquivo existe ou non
+                        if (ficheiro.exists()){
+                            try(
+                                AppendObjectOutputStream os=new AppendObjectOutputStream(new FileOutputStream(NOME_FICHEIRO,true));
+                            ){
+                                os.writeObject(p);
+                            }catch (IOException e){
+                                System.out.println("Erro ao escribir o arquivo");
+                            }
+                        }else {
+                            try(
+                                    ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream(NOME_FICHEIRO));
+                            ){
+                                os.writeObject(p);
+                            }catch (IOException e){
+                                System.out.println("Erro ao escribir o arquivo");
+                            }
+                        }
+                        JOptionPane.showMessageDialog(null,"Estudiante gardado correctamente!");
+                    }catch (NumberFormatException e){
+                        System.out.println("Error: a idade debe ser un número enteiro");
+                    }catch (Exception e){
+                        System.out.println("Error ao gardar o usuario");
+                    }
+                    limparConsola(true);
+                    continue;
+                case 2:
+                    try(
+                        FileInputStream fi=new FileInputStream(NOME_FICHEIRO);
+                        ObjectInputStream streamObjeto=new ObjectInputStream(fi);
+                    ){
+                        StringBuilder texto=new StringBuilder();
+                        texto.append("\n---------Estudiantes guardados---------");
+                        while(true) {
+                            try{
+                                Persona p=(Persona) streamObjeto.readObject();
+                                texto.append("\n").append(p).append("\n-------------------");
+                            }catch (EOFException e){
+                                break;
+                            }
+                        }
+                        System.out.println(texto.toString());
                     } catch (FileNotFoundException e) {
                         System.out.println("Error, fichero no encontrado");
                     } catch (IOException e) {
                         System.out.println("Error: " + e.getMessage());
                     }catch (NumberFormatException e){
-                        System.out.println("Error: "+e.getMessage());
+                        System.out.println("Error: a idade debe ser un número enteiro");
                     }catch (Exception e){
-                        System.out.println("Error: "+e.getMessage());
+                        System.out.println("Error ao gardar o usuario");
                     }
                     limparConsola(true);
                     continue;
-                case 2:
-
-                    continue;
                 case 3:
-
-                    limparConsola(true);
-                    continue;
-                case 4:
-
+                    String nombre=JOptionPane.showInputDialog("Introduce el nombre del estudiante: ");
+                    try(
+                            FileInputStream fi=new FileInputStream(NOME_FICHEIRO);
+                            ObjectInputStream streamObjeto=new ObjectInputStream(fi);
+                    ){
+                        StringBuilder texto=new StringBuilder();
+                        texto.append("\n---------Estudiante---------");
+                        while(true) {
+                            try{
+                                Persona p=(Persona) streamObjeto.readObject();
+                                if (p.getNome().equals(nombre)) {
+                                    texto.append("\n").append(p).append("\n-------------------");
+                                    System.out.println(texto.toString());
+                                    break;
+                                }
+                            }catch (EOFException e){
+                                System.out.println("No se ha encontrado al alumno con nombre "+nombre);
+                                break;
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Error, fichero no encontrado");
+                    } catch (IOException e) {
+                        System.out.println("Error: " + e.getMessage());
+                    }catch (Exception e){
+                        System.out.println("Error ao mostrar o usuario");
+                    }
                     limparConsola(true);
                     continue;
             }
@@ -63,36 +123,10 @@ public class Main {
         }
     }
 
-
-    public static void escribirFicheiro(){
-        try (
-                FileOutputStream ficheiro = new FileOutputStream("ejer1.dat",true);
-                ObjectOutputStream fo = new ObjectOutputStream(ficheiro);
-        ) {
-            //recollida de datos
-            String novoNome = JOptionPane.showInputDialog("Introduce el nombre: ");
-            if (novoNome == null || novoNome.equals("")) { throw new Exception("Non se pode ter un nome vacío!"); }
-            String idadeString = JOptionPane.showInputDialog("Introduce a idade: ");
-            int idade = Integer.parseInt(idadeString);
-
-            //crease o obxeto e gardase
-            Persona p=new Persona(novoNome,idade);
-            fo.writeObject(p);
-        } catch (FileNotFoundException e) {
-            System.out.println("Error, fichero no encontrado");
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
-        }catch (NumberFormatException e){
-            System.out.println("Error: "+e.getMessage());
-        }catch (Exception e){
-            System.out.println("Error: "+e.getMessage());
-        }
-    }
-
     private static String getMenu(){
         StringBuilder sb=new StringBuilder();
 
-        sb.append("#######Gestor de archivos y directorios#######\n")
+        sb.append("#######Gestor de estudiantes#######\n")
                 .append("1.Engadir estudiante\n")
                 .append("2.Mostrar estudiantes\n")
                 .append("3.Mostrar estudiante\n")
@@ -124,11 +158,5 @@ public class Main {
         }else{
             return lerNumero("Error, debe introducir un número: ");
         }
-    }
-
-    private static String lerTexto(String texto){
-        System.out.print(texto);
-        Scanner ler = new Scanner(System.in);
-        return ler.nextLine();
     }
 }
