@@ -47,3 +47,6 @@ Serven para gardar obxetos.
 O problema que teñen é que a versión do obxeto non pode cambiar, senon daría erro. Ademais solo serven para leer en java e linguaxes derivadas.
 
 Completar, xa fixen mil ejers
+
+### URLS
+Usar URI e convertir en URL
