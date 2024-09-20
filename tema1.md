@@ -33,4 +33,17 @@ separadores:
 ...completar cos apuntes❗❗❗
 
 ### RandomAccessFile
+completar con apuntes
 
+### Serializacion
+### UID da clase
+Nunha clase que é serializable, se non se pon esto, o uid cambiara cada vez que se compile o programa, facendo que non sea compatible con archivos que teñen obxetos dunha version distinta. Desta maneira sempre terá o indicado.
+```java
+private static final long serialVersionUID=UIDversionClase;
+```
+#### ObjectInputStream e ObjectOutputStream
+Serven para gardar obxetos.
+
+O problema que teñen é que a versión do obxeto non pode cambiar, senon daría erro. Ademais solo serven para leer en java e linguaxes derivadas.
+
+Completar, xa fixen mil ejers

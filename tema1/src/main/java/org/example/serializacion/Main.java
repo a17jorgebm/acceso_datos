@@ -48,11 +48,11 @@ public class Main {
                                     ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream(NOME_FICHEIRO));
                             ){
                                 os.writeObject(p);
+                                JOptionPane.showMessageDialog(null,"Estudiante gardado correctamente!");
                             }catch (IOException e){
                                 System.out.println("Erro ao escribir o arquivo");
                             }
                         }
-                        JOptionPane.showMessageDialog(null,"Estudiante gardado correctamente!");
                     }catch (NumberFormatException e){
                         System.out.println("Error: a idade debe ser un número enteiro");
                     }catch (Exception e){
