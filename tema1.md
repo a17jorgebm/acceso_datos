@@ -50,3 +50,35 @@ Completar, xa fixen mil ejers
 
 ### URLS
 Usar URI e convertir en URL
+
+### Clase Scanner
+Repasar a presentacion flujos de entrada e salida
+
+!! Mirar o String.format()
+
+!! Mirar expresions regulares
+
+### Clase console
+````java
+Console consola=System.console();
+//comprobamos que o programa se tea executando desde consola, 
+// non dende un emulador de consola por ejemplo o IDE
+if(con != null){
+    
+        }
+````
+
+
+
+## COUSAS INTERESANTES
+Rpresentacion endianness, littleengine
+
+programa XhD para ver e modificar bytes de un bmp
+
+ejer 6 boletin- pasar os bytes que estan en little endian a entero...doble...
+
+numeros binarios negativos - complemento a 2
+    o operador &
+
+
+no ejercicio 6 usa a mascara para que non arrastre o signo
