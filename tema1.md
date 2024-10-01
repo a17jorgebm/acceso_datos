@@ -74,6 +74,7 @@ PrintWriter ou BufferedWriter:
 * BufferedWriter o que ten é que podes indicar o tamaño do buffer
 
 ## COUSAS INTERESANTES BOLETIN
+### ejer6
 Rpresentacion endianness, littleengine
 
 programa XhD para ver e modificar bytes de un bmp
@@ -85,6 +86,12 @@ numeros binarios negativos - complemento a 2
 
 
 no ejercicio 6 usa a mascara para que non arrastre o signo
+
+### ejer5
+cousas utiles: hashcode e equals,comparable
+
+modelo dao
+    con modelo, interfaz dao e implementación da interfaz, e o modeloFactory se me veño arriba
 
 
 # Java NIO.2
@@ -99,3 +106,14 @@ import java.io.File;
 
 Path path = File.to
 ````
+
+# Patrons de deseño
+Son estratexias
+
+## Patron DAO
+data access object
+
+fai os metodos CRUD (create, read, update, delete)
+## Patron MVC
+Modelo vista controlador
+
