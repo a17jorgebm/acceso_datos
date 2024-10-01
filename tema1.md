@@ -96,9 +96,9 @@ Elevamos 2 a 31 xa que un dos bits do enteiro usase para o signo, se fora `unsig
 No caso dos `streams de bytes`, read() devolve un int simplemente para poder representar o valor -1, que significa que acabou de ler o flujo.
 * Neste caso o int conten un valor de byte nos últimos 8 bits
 
-No caso dos `streams de caracteres`, read() devolve un int, a parte de po -1, para poder representar un caracter UNICODE de 16 bits.
-* O int conten un valor de caracter nos últimos 16 bits
-* 
+No caso dos `streams de caracteres`, read() devolve un int, a parte de po -1, para poder representar un caracter() UNICODE de 16 bits.
+* O int conten un valor de caracter(char) nos últimos 16 bits
+
 
 
 
