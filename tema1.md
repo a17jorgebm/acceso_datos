@@ -83,7 +83,7 @@ Accede aos arquivos de texto `de maneira aleatoria.`
 
 pf suponse que entra pero... preguntar⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
-
+---
 # Flujos de E/S
 Un flujo🔀 representa unha fuenta de entrada ou destino de salida, que conten unha lista de elementos de datos representados `secuencialmente`. Esta secuencia de datos non se sabe canto mide e é dividida en `bloques`, os cales poden ser disntintos dependendo do tipo de flujo(bytes individuales, caracteres, cadenas de caracteres). Por ejemplo coas clases `buffer`, podense crear bloques de bytes ou caracteres mais grandes do normal.
 
@@ -130,14 +130,40 @@ Esto representa la cadena "Hola ñ 😊". El InputStreamReader hará lo siguient
     Lee los siguientes tres bytes (9F 98 8A), y lo interpreta como el emoji 😊.
 
 
-## Flujos de bytes 0️⃣1️⃣
+# Flujos de bytes 0️⃣1️⃣
+## InputStream e OutputStream
 Todas as clases de flujos de bytes heredan das clases abstractas `InputStream` e `OutputStream`. Se non se usa buffer, por defecto estas clases escriben e leen de 8 en 8 bits, é dicir 1 byte.
 
-### InputStream
+````java
+File ficheiro=new File("pom.xml");
+try(
+    FileInputStream input=new FileInputStream(ficheiro);
+    FileOutputStream output=new FileOutputStream(ficheiro.getName()+".copia");
+){
+    int c;
+    while((c=input.read())!=-1){
+        output.write(c);
+    }
+}
+````
+### Read() e Write()
+Tanto read como write leen ou escriben un int(representando un byte). Ademais, a ambos se lles pode pasar un `array de bytes que actuará como buffer`, para mellorar o rendimiento:
 
+````java
+byte[] buffer=new byte[1024]; //buffer de 1024 bytes
+int cantidadBytes; //numero de bytes gardados no buffer polo metodo read()
+while((cantidadBytes=input.read(buffer))!=-1){
+    /*
+    pasaselle:
+        - O buffer do que ler os bytes
+        - Desde donde empezar a ler no buffer(suele ser 0)
+        - Ata que posicion do buffer ler (suele ser o valor que devolve read())
+     */
+    output.write(buffer,0,cantidadBytes);
+}
+````
 
-
-## Explicación metodo read() e os ints
+### Explicación metodo read() e os ints
 Quero explicar antes de nada porque ambas clases, a hora de ler co metodo `.read()` este devolve un enteiro(_int_).
 
 Un int ten 32bits, osea 4 bytes. Ademais usa a `representación complemento a 2`, a cal usa o primeiro bit para representar se o número é positivo ou negativo. De ahí que un int poida representar:
@@ -146,14 +172,124 @@ Un int ten 32bits, osea 4 bytes. Ademais usa a `representación complemento a 2`
 
 Elevamos 2 a 31 xa que un dos bits do enteiro usase para o signo, se fora `unsigned` podería representar 2^32 - 1(pq empezamos en 0)= 4,294,967,295 números.
 
-### Entonces, porque read devolve un int en ambos casos?
+#### Entonces, porque read devolve un int en ambos casos?
 No caso dos `streams de bytes`, read() devolve un int simplemente para poder representar o valor -1, que significa que acabou de ler o flujo.
 * Neste caso o int conten un valor de byte nos últimos 8 bits
 
 No caso dos `streams de caracteres`, read() devolve un int, a parte de po -1, para poder representar un caracter() UNICODE de 16 bits.
 * O int conten un valor de caracter(char) nos últimos 16 bits
 
+## ObjectInputStream e ObjectOutputStream
+`ObjectInputStream` lee objetos serializados do flujo de entrada e deserializaos, mentres que `ObjectOutputStream` serializa os objetos e escribeos no flujo de salida.
 
+Para que un objeto poida ser serializado debe implementar a interfaz `Serializable`, ademais todos os objetos que usa tamen a deben de ter.
+
+````java
+class ClaseSerializable implements Serializable {}
+ClaseSerializable objetoSerializable=new ClaseSerializable();
+````
+`Escribir` un obxeto nun ficheiro:
+````java
+try(
+    ObjectOutputStream output = new ObjectOutputStream(FileOutputStream("ficheiro.dat"));
+){
+    output.writeObject(objetoSerializable);
+}catch(IOException e){}
+````
+`Ler` un obxeto dun ficheiro
+Usase un bucle while infinito, o cal para cando se lanza a extepcion EOFException
+````java
+try(ObjectInputStream input=newObjectInputStream(new FileInputStream("ficheiro.dat"))){
+    try{
+        while(true){
+            ClaseSerializable objetoLeido=(ClaseSerializable) input.readObject();
+        }
+    }catch(EOFException){ //cando non haxa mais obxetos, lanza excepcion e parase o bucle
+        break;
+    }
+}catch(IOException e){}
+````
+### ⚠️ Fallo añadir obxetos a ficheiro existente ⚠️
+ObjectOutputStream escribe unha nova cabeceira cada vez que se abre un ficheiro cun novo obxeto desta clase, o cal fai que o arquivo se corrompa se xa existia e se fai un append.
+
+Para solucionar esto, teremos que crear unha clase que extenda de ObjectOutputStream e sobreescribir o metodo `writeStreamHeader`, facendo que non faga nada. Despois a hora de escribir no arquivo, teremos que comprobar se xa existe (usaremos a nova clase creada por nos) ou non
+(usaremos a clase normal ObjectOuputStream).
+
+````java
+public class AppendObjectOutputStream extends ObjectOutputStream {
+    public AppendObjectOutputStream(OutputStream out) throws IOException {
+        super(out);
+    }
+
+    @Override
+    public void writeStreamHeader() throws IOException {
+        //pa que non escribe o header no arquivo, facendo que se corrompa
+    }
+}
+````
+Uso:
+````java
+if (ficheiro.exists()){
+    try(
+        AppendObjectOutputStream os=new AppendObjectOutputStream(new FileOutputStream(NOME_FICHEIRO,true));
+    ){
+        os.writeObject(p);
+    }catch (IOException e){
+        System.out.println("Erro ao escribir o arquivo");
+    }
+}else {
+    try(
+            ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream(NOME_FICHEIRO));
+    ){
+        os.writeObject(p);
+        JOptionPane.showMessageDialog(null,"Estudiante gardado correctamente!");
+    }catch (IOException e){
+        System.out.println("Erro ao escribir o arquivo");
+    }
+}
+````
+## URL e flujos
+Tamen se pode traballar con URLs e flujos.
+1. Crearemos a `URL` a partir dunha `URI`
+2. Usamos o metodo `url.openConnection()` para abrir unha `URLConnection`, da cal se pode sacar o InputStream co metodo `.getInputStream()`
+3. Neste caso pasamos a URLConnection a un obxeto `HttpURLConnection`, que nos permite traballar con elementos especificos de HTTP.
+4. A partir dese objeto podemos coller atributos do head de http, pero NON O InputStream
+
+Gardamos a pagina nun ficheiro mediante InputStream
+````java
+public static void main(String[] args) throws Exception {
+    File ficheiroPagina=new File("web.html");
+    
+    URL url=(new URI("https://google.es")).toURL();
+    URLConnection conexion=url.openConnection(); //de onde sacamos o flujo
+    HttpURLConnection con=(HttpURLConnection) conexion;
+    
+    try(
+            InputStream in=conexion.getInputStream();
+            FileOutputStream fos=new FileOutputStream(ficheiroPagina);
+    ){
+        byte[] buffer=new byte[1024];
+        int numLeido;
+        while((numLeido=in.read(buffer))!=-1){
+            fos.write(buffer,0,numLeido);
+        }
+        System.out.println(con.getContentType());
+    }
+}
+````
+
+Como se ve, o obxeto `HttpURLConection` solo se usa para cousas especificas de HTTP. Por exemplo no caso de que solo quixeramos mirar datos da cabeceira pero non foramos descargar todo o contido da paxina, fariamos o seguinte para aforrar recursos:
+````java
+URL url = (new URI("https://ejemplo.com/recurso")).toURL();
+HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
+httpConnection.setRequestMethod("HEAD");  // Usar el método HEAD para obtener solo los headers
+httpConnection.connect();
+// Obtener el tipo de contenido desde los headers
+String contentType = httpConnection.getHeaderField("Content-Type");
+System.out.println("Content-Type: " + contentType);
+// Cerrar la conexión
+httpConnection.disconnect();
+````
 
 
 # Serializacion
@@ -237,4 +373,3 @@ data access object
 fai os metodos CRUD (create, read, update, delete)
 ## Patron MVC
 Modelo vista controlador
-
