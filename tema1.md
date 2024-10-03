@@ -79,11 +79,13 @@ Necesarios para facer apps multiplataforma:
 
 
 # RandomAccessFile
+Accede aos arquivos de texto `de maneira aleatoria.`
+
 pf suponse que entra pero... preguntar⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 
 # Flujos de E/S
-Un flujo🔀 representa unha fuenta de entrada ou destino de salida, que conten unha lista de elementos de datos representados secuencialmente. Esta secuencia de datos non se sabe canto mide e é dividida en `bloques`, os cales poden ser disntintos dependendo do tipo de flujo(bytes individuales, caracteres, cadenas de caracteres). Por ejemplo coas clases `buffer`, podense crear bloques de bytes ou caracteres mais grandes do normal.
+Un flujo🔀 representa unha fuenta de entrada ou destino de salida, que conten unha lista de elementos de datos representados `secuencialmente`. Esta secuencia de datos non se sabe canto mide e é dividida en `bloques`, os cales poden ser disntintos dependendo do tipo de flujo(bytes individuales, caracteres, cadenas de caracteres). Por ejemplo coas clases `buffer`, podense crear bloques de bytes ou caracteres mais grandes do normal.
 
 A **fuente de entrada** pode ser de moitos tipos:
 * arquivos de disco: `FileReader`,`FileInputStream` 
@@ -128,7 +130,7 @@ Esto representa la cadena "Hola ñ 😊". El InputStreamReader hará lo siguient
     Lee los siguientes tres bytes (9F 98 8A), y lo interpreta como el emoji 😊.
 
 
-## Flujos de bytes
+## Flujos de bytes 0️⃣1️⃣
 Todas as clases de flujos de bytes heredan das clases abstractas `InputStream` e `OutputStream`. Se non se usa buffer, por defecto estas clases escriben e leen de 8 en 8 bits, é dicir 1 byte.
 
 ### InputStream
