@@ -1,3 +1,5 @@
+📖 fumada de idea pa ejercicio, implementar un Reader a partir dun InputStream e un BufferedInputStream📖
+
 ## Cousas que mirar
 Moito mais eficiente que ir xuntando Strings, xa que usa o mesmo obxeto
 ### StringBuilder
@@ -81,7 +83,57 @@ pf suponse que entra pero... preguntar⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 
 # Flujos de E/S
-Traballase con flujos de bytes ou flujos de caracteres(que a sua vez traballan con flujos de bytes);
+Un flujo🔀 representa unha fuenta de entrada ou destino de salida, que conten unha lista de elementos de datos representados secuencialmente. Esta secuencia de datos non se sabe canto mide e é dividida en `bloques`, os cales poden ser disntintos dependendo do tipo de flujo(bytes individuales, caracteres, cadenas de caracteres). Por ejemplo coas clases `buffer`, podense crear bloques de bytes ou caracteres mais grandes do normal.
+
+A **fuente de entrada** pode ser de moitos tipos:
+* arquivos de disco: `FileReader`,`FileInputStream` 
+* dispositivos: `System.in`
+* outros programas
+* Strings: `StringReader`
+* arrays en memoria: `ByteArrayInputStream`
+
+A fonte de **salida** terá os seus correspondentes, solo cambiando
+
+E poden representar distintos **tipos de datos**:
+* **BYTES**: `FileInputStream`
+* **Datos primitivos**: `DataInputStream` 
+* **Caracteres**: `FileReader`
+* **Objetos**: `ObjectInputStream`  
+
+## ❗❗Diferencia principal entre flujos e bytes e caracteres
+Os flujos de caracteres, internamente, traballan con flujos de bytes.
+
+1. A maior diferencia é a cantidade de bits que leen:
+   * Os de byte leen `8 bits`(1 Byte)
+   * Mentras que os de carácteres leen `16 bits`, o necesario para representar caracteres(un char) en UTF-16 (que é co que traballa java).
+2. Ademais, Reader pode convertir bytes a caracteres automaticamente según a codificación de caracteres da fuente de datos(un arquivo por ejemplo). Como sabe que codificación usar? Gracias a clase `InputStreamReader`. Por defecto, lee en UTF-16, pero podeselle indicar a codificación como parámetro (cousa que non se pode facer con FileReader, xa que sempre usará UTF-8).
+
+En utf-8 os caracteres poden ocupar de 8 bits ata 32 bits. Reader lee de 16 en 16, polo que para ler os que ocupan mais de esto, pode xuntar varios bloques de 16 bits para completalo. 
+Como se sabe canto ocupará? Mediante os primeiros bits do primeiro byte do caracter, os cales indican a propia codificación do caracter, e por tanto, o tamaño que ocupará. Exemplo:
+
+Supongamos que tienes un archivo UTF-8 con la siguiente secuencia de bytes:
+
+`48 6F 6C 61 20 C3 B1 20 F0 9F 98 8A
+`
+
+Esto representa la cadena "Hola ñ 😊". El InputStreamReader hará lo siguiente:
+
+    Lee 48 (01001000 en binario), detecta que es un carácter ASCII (1 byte), lo interpreta como H.
+    Lee 6F (01101111), que es también ASCII, lo interpreta como o.
+    Lee 6C, que es ASCII, lo interpreta como l.
+    Lee 61, que es ASCII, lo interpreta como a.
+    Lee C3, detecta que es el inicio de un carácter de 2 bytes porque comienza con 110xxxxx.
+    Lee el siguiente byte, B1, completa el carácter UTF-8 y lo interpreta como ñ.
+    Lee F0, detecta que es el inicio de un carácter de 4 bytes (porque comienza con 11110xxx).
+    Lee los siguientes tres bytes (9F 98 8A), y lo interpreta como el emoji 😊.
+
+
+## Flujos de bytes
+Todas as clases de flujos de bytes heredan das clases abstractas `InputStream` e `OutputStream`. Se non se usa buffer, por defecto estas clases escriben e leen de 8 en 8 bits, é dicir 1 byte.
+
+### InputStream
+
+
 
 ## Explicación metodo read() e os ints
 Quero explicar antes de nada porque ambas clases, a hora de ler co metodo `.read()` este devolve un enteiro(_int_).
