@@ -5,21 +5,18 @@ import java.net.*;
 import java.util.Date;
 
 public class PruebasApuntes {
-    public static void main(String[] args) throws Exception {
-        File ficheiroPagina=new File("web.html");
-        URL url=(new URI("https://google.es")).toURL();
-        URLConnection conexion=url.openConnection(); //de onde sacamos o flujo
-        HttpURLConnection con=(HttpURLConnection) conexion;
+    public static void main(String[] args) {
+        File ficheroEntrada=new File("pom.xml");
+        File ficheroSalida=new File("copia.xml");
         try(
-                InputStream in=conexion.getInputStream();
-                FileOutputStream fos=new FileOutputStream(ficheiroPagina);
+                BufferedReader input=new BufferedReader(new FileReader(ficheroEntrada));
+                BufferedWriter output=new BufferedWriter(new FileWriter(ficheroSalida));
         ){
-            byte[] buffer=new byte[1024];
-            int numLeido;
-            while((numLeido=in.read(buffer))!=-1){
-                fos.write(buffer,0,numLeido);
+            char[] buffer=new char[1024];
+            int byteLeido;
+            while((byteLeido=input.read(buffer))!=-1){
+                output.write(buffer,0,byteLeido);
             }
-            System.out.println(con.getContentType());
-        }
+        }catch (Exception e){}
     }
 }

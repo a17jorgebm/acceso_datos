@@ -182,13 +182,20 @@ No caso dos `streams de caracteres`, read() devolve un int, a parte de po -1, pa
 ## ObjectInputStream e ObjectOutputStream
 `ObjectInputStream` lee objetos serializados do flujo de entrada e deserializaos, mentres que `ObjectOutputStream` serializa os objetos e escribeos no flujo de salida.
 
+### Serializable
 Para que un objeto poida ser serializado debe implementar a interfaz `Serializable`, ademais todos os objetos que usa tamen a deben de ter.
-
 ````java
 class ClaseSerializable implements Serializable {}
 ClaseSerializable objetoSerializable=new ClaseSerializable();
 ````
-`Escribir` un obxeto nun ficheiro:
+#### UID da clase
+Nunha clase que é serializable, se non se pon esto, o uid cambiara cada vez que se compile o programa, facendo que non sea compatible con archivos que teñen obxetos dunha version distinta. Desta maneira sempre terá o indicado.
+
+````java
+private static final long serialVersionUID=UIDversionClase;
+````
+
+✏️ `Escribir` un obxeto nun ficheiro:
 ````java
 try(
     ObjectOutputStream output = new ObjectOutputStream(FileOutputStream("ficheiro.dat"));
@@ -196,7 +203,8 @@ try(
     output.writeObject(objetoSerializable);
 }catch(IOException e){}
 ````
-`Ler` un obxeto dun ficheiro
+📖 `Ler` un obxeto dun ficheiro 
+
 Usase un bucle while infinito, o cal para cando se lanza a extepcion EOFException
 ````java
 try(ObjectInputStream input=newObjectInputStream(new FileInputStream("ficheiro.dat"))){
@@ -253,7 +261,7 @@ Tamen se pode traballar con URLs e flujos.
 1. Crearemos a `URL` a partir dunha `URI`
 2. Usamos o metodo `url.openConnection()` para abrir unha `URLConnection`, da cal se pode sacar o InputStream co metodo `.getInputStream()`
 3. Neste caso pasamos a URLConnection a un obxeto `HttpURLConnection`, que nos permite traballar con elementos especificos de HTTP.
-4. A partir dese objeto podemos coller atributos do head de http, pero NON O InputStream
+4. A partir dese objeto podemos coller atributos do head de http, pero NON O InputStream, este sempre o sacaremos do URLConnection.
 
 Gardamos a pagina nun ficheiro mediante InputStream
 ````java
@@ -278,7 +286,7 @@ public static void main(String[] args) throws Exception {
 }
 ````
 
-Como se ve, o obxeto `HttpURLConection` solo se usa para cousas especificas de HTTP. Por exemplo no caso de que solo quixeramos mirar datos da cabeceira pero non foramos descargar todo o contido da paxina, fariamos o seguinte para aforrar recursos:
+Como se ve, o obxeto `HttpURLConection` solo se usa para cousas especificas de HTTP. No caso de que solo quixeramos mirar datos da cabeceira pero non foramos descargar todo o contido da paxina, fariamos o seguinte para aforrar recursos:
 ````java
 URL url = (new URI("https://ejemplo.com/recurso")).toURL();
 HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
@@ -291,22 +299,81 @@ System.out.println("Content-Type: " + contentType);
 httpConnection.disconnect();
 ````
 
+# Flujos de caracteres 🔡
+Como xa se comentou, os flujos de caracteres son clases envoltorias dos flujos de bytes que fan moi sinxela a transformación de `byte->caracter`
+* Todas as clases de flujo de caracteres heredan de `Reader` e `Writer`
+* Usan os flujos de bytes para a E/S física, e os flujos de caracteres encarganse da traducción de byte a caracter
+* Traballan con 16 bits en vez de 8, podendo xuntar bytes para formar caracteres mais complexos, como expliquei [aqui](#diferencia-principal-entre-flujos-e-bytes-e-caracteres)
 
-# Serializacion
-### UID da clase
-Nunha clase que é serializable, se non se pon esto, o uid cambiara cada vez que se compile o programa, facendo que non sea compatible con archivos que teñen obxetos dunha version distinta. Desta maneira sempre terá o indicado.
-```java
-private static final long serialVersionUID=UIDversionClase;
-```
-### ObjectInputStream e ObjectOutputStream
-Serven para gardar obxetos.
+## InputStreamReader e OutputStreamReader
+Son flujos puente `byte-a-caracter` de proposito general, colle un InputStream e transformano nun Reader e Writer usable.
 
-O problema que teñen é que a versión do obxeto non pode cambiar, senon daría erro. Ademais solo serven para leer en java e linguaxes derivadas.
+Usando o exemplo de arriba da URL, en vez de usar InputStream directamente, poderíase pasar a Reader (ter en conta que de esa maneira solo valería con texto)
+````java
+try(
+    InputStream in=conexion.getInputStream();
+    //pasamos o InputStream a Reader e traballamos con caracteres
+    InputStreamReader inReader=new InputStreamReader(in);
+    FileWriter fos=new FileWriter(ficheiroPagina);
+){
+    int bits;
+    while((bits=inReader.read())!=-1){
+        fos.write(bits);
+    }
+}
+````
 
-Completar, xa fixen mil ejers
+# Flujos con Buffer
+Nos flujos sen buffer, cada petición de lectura/escritura vai `directamente o sistema E/S`, o cal pode resultar `moi ineficiente` (acceso a disco, actividad de red...)
 
-## URLS
-Usar URI e convertir en URL
+Os buffer son flujos de alto nivel, que encapsulan outros flujos de baixo ou alto nivel para facelos mais eficientes e faciles de usar.
+
+SEMPRE se recomenda usar un buffer cada vez que se traballa con flujos
+
+## Para bytes
+Usase `BufferedInputStream` e `BufferedOutputStream`.
+
+Podese traballar con eles sen indicarlle un buffer, xa que usarán un buffer interno, facendo as operacións moito mais eficientes
+````java
+File ficheroEntrada=new File("pom.xml");
+File ficheroSalida=new File("copia.xml");
+try(
+        BufferedInputStream input=new BufferedInputStream(new FileInputStream(ficheroEntrada));
+        BufferedOutputStream output=new BufferedOutputStream(new FileOutputStream(ficheroSalida));
+){
+    int byteLeido;
+    while((byteLeido=input.read())!=-1){
+        output.write(byteLeido);
+    }
+}catch (Exception e){}
+````
+E tamen se lle pode indicar un buffer manualmente, se queremos ter mais control.
+````java
+byte[] buffer=new byte[1024];
+int byteLeido;
+while((byteLeido=input.read(buffer))!=-1){
+    output.write(buffer,0,byteLeido);
+}
+````
+## Para caracteres
+Usase `BufferedReader` e `BufferedWriter`.
+
+O funcionamento é exactamente igual, solo que no caso de usar un buffer manual, terá que ser de `chars`, xa que é co que traballará
+````java
+try(
+        BufferedReader input=new BufferedReader(new FileReader(ficheroEntrada));
+        BufferedWriter output=new BufferedWriter(new FileWriter(ficheroSalida));
+){
+    char[] buffer=new char[1024];
+    int byteLeido;
+    while((byteLeido=input.read(buffer))!=-1){
+        output.write(buffer,0,byteLeido);
+    }
+````
+
+# Resumen
+
+
 
 ## Clase Scanner
 Repasar a presentacion flujos de entrada e salida
