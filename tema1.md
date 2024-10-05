@@ -2,6 +2,18 @@
 
 ## Cousas que mirar
 Moito mais eficiente que ir xuntando Strings, xa que usa o mesmo obxeto
+### Casting de objetos
+Cando facemos un casting dun objeto a unha subclase, o unico que estamos facendo é darlle funcionalidades adicionales que poida ter esa subclase, pero o objeto `sigue sendo o mismo` e afectaralle todo o que se faga no objeto da subclase.
+Ejemplo:
+
+````java
+import java.net.HttpURLConnection;
+import java.net.URLConnection;
+
+URLConnection conexion = objetoURL.openConnection();
+HttpURLConnection conexionHttp=(HttpURLConnection) conexion;
+````
+Todo o que se faga no objeto conexionHttp afectaralle ao objeto conexion.
 ### StringBuilder
 ```java
 StringBuilder sb= new StringBuilder();
@@ -293,11 +305,12 @@ HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
 httpConnection.setRequestMethod("HEAD");  // Usar el método HEAD para obtener solo los headers
 httpConnection.connect();
 // Obtener el tipo de contenido desde los headers
-String contentType = httpConnection.getHeaderField("Content-Type");
-System.out.println("Content-Type: " + contentType);
+// String contentType = httpConnection.getHeaderField("Content-Type"); //tamen se pode asi
+System.out.println("Content-Type: " + httpConnection.getContentType());
 // Cerrar la conexión
 httpConnection.disconnect();
 ````
+Indicar que se se pon o request method do objeto HttpURLConnection a "HEAD", esto tamen vai afectar ao objeto URLConnection que lle pasamos, xa que o que fai HttpURLConnection(que é unha subclase de URLConnection) é castear o objeto, polo que apuntan a misma conexion. 
 
 # Flujos de caracteres 🔡
 Como xa se comentou, os flujos de caracteres son clases envoltorias dos flujos de bytes que fan moi sinxela a transformación de `byte->caracter`

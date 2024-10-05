@@ -41,7 +41,7 @@ public class ApartadoA {
             BufferedOutputStream bo=new BufferedOutputStream(new FileOutputStream(archivoDestino));
         )
         {
-            byte[] datos=new byte[200];
+            byte[] datos=new byte[200]; //innecesario pero para practicar
             while ((bi.read(datos))!=-1){
                 bo.write(datos);
             }

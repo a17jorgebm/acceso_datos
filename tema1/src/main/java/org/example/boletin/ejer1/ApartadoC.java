@@ -7,6 +7,14 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/*
+c) Realiza un programa que lea con un JOptionPane pida una URL y para
+posteriormente abrir un JFileChooser para guardarlo en el disco local.
+Ayuda: para abrir un flujo de entrada a una URL puede hacerse con el
+método openStream() de URL. Ten en cuenta que puede lanzar excepciones.
+InputStream in = new URL(FILE_URL).openStream();
+ */
 public class ApartadoC {
     public static final String EXTENSION_WEBP=".webp";
     public static void main(String[] args) {
