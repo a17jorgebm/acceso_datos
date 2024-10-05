@@ -39,11 +39,13 @@ public class ApartadoB {
         File directorioArchivoDestino=chooser.getSelectedFile();
 
         //seleccion arquivo destino
-        JTextField texto=new JTextField("Introduce o nombre do arquivo:");
-        File archivoDestino=new File(texto.getText());
+        String texto=JOptionPane.showInputDialog("Introduce o nombre do arquivo:");
+        File archivoDestino=new File(directorioArchivoDestino,texto);
+
+        System.out.println(archivoDestino.getAbsolutePath());
 
         //todo vou aqui
-        if (directorioArchivoDestino.isDirectory()){
+        if (archivoDestino.isDirectory()){
             System.out.println("Non se pode crear o arquivo de destino, xa existe un directorio con ese nome");
             return;
         }
