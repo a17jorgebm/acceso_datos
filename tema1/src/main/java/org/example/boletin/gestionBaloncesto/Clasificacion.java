@@ -1,8 +1,13 @@
 package org.example.boletin.gestionBaloncesto;
 
-import java.util.Set;
-
 public class Clasificacion {
     private String competicion;
-    private Set<Equipo> equipos;
+
+    public String getCompeticion() {
+        return competicion;
+    }
+
+    public void setCompeticion(String competicion) {
+        this.competicion = competicion;
+    }
 }

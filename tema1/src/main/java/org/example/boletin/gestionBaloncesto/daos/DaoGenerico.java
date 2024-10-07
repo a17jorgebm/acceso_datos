@@ -1,4 +1,4 @@
-package org.example.boletin.gestionBaloncesto;
+package org.example.boletin.gestionBaloncesto.daos;
 
 import java.util.List;
 
