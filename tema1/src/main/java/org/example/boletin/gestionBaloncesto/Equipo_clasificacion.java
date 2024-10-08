@@ -1,22 +1,27 @@
 package org.example.boletin.gestionBaloncesto;
 
 public class Equipo_clasificacion {
-    private Equipo equipo;
-    private Clasificacion clasificacion;
+    private String idEquipo;
+    private String idClasificacion;
 
-    public Equipo getEquipo() {
-        return equipo;
+    public Equipo_clasificacion(String idEquipo, String idClasificacion) {
+        this.idEquipo = idEquipo;
+        this.idClasificacion = idClasificacion;
     }
 
-    public void setEquipo(Equipo equipo) {
-        this.equipo = equipo;
+    public String getIdEquipo() {
+        return idEquipo;
     }
 
-    public Clasificacion getClasificacion() {
-        return clasificacion;
+    public void setIdEquipo(String idEquipo) {
+        this.idEquipo = idEquipo;
     }
 
-    public void setClasificacion(Clasificacion clasificacion) {
-        this.clasificacion = clasificacion;
+    public String getIdClasificacion() {
+        return idClasificacion;
+    }
+
+    public void setIdClasificacion(String idClasificacion) {
+        this.idClasificacion = idClasificacion;
     }
 }
