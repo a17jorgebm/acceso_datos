@@ -1,24 +1,29 @@
 package org.example.boletin.gestionBaloncesto.dao_implementations;
 
 import org.example.boletin.gestionBaloncesto.Clasificacion;
+import org.example.boletin.gestionBaloncesto.Funcions;
 import org.example.boletin.gestionBaloncesto.daos.DaoGenerico;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.Set;
 
 public class ImpDaoClasificacion implements DaoGenerico<Clasificacion,String> {
+    private static final String FICHEIRO_CLASIFICACIONS="clasificacions.dao";
+
     @Override
-    public Clasificacion get(String id) {
+    public Clasificacion get(String id) throws IOException, ClassNotFoundException {
         return null;
     }
 
     @Override
-    public List<Clasificacion> getAll() {
-        return List.of();
+    public Set<Clasificacion> getAll() throws IOException, ClassNotFoundException {
+        Set<Clasificacion> clasificacions=Funcions.lerFicheiroObxetos(FICHEIRO_CLASIFICACIONS,Clasificacion.class);
+        return clasificacions;
     }
 
     @Override
-    public boolean save(Clasificacion obj) {
-        return false;
+    public boolean save(Clasificacion obj) throws IOException {
+        return Funcions.engadirObxetoFicheiro(FICHEIRO_CLASIFICACIONS,obj);
     }
 
     @Override

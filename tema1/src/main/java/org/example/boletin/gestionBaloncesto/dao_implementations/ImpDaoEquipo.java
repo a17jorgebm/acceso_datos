@@ -3,7 +3,8 @@ package org.example.boletin.gestionBaloncesto.dao_implementations;
 import org.example.boletin.gestionBaloncesto.Equipo;
 import org.example.boletin.gestionBaloncesto.daos.DaoGenerico;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.Set;
 
 public class ImpDaoEquipo implements DaoGenerico<Equipo,String> {
     @Override
@@ -12,12 +13,12 @@ public class ImpDaoEquipo implements DaoGenerico<Equipo,String> {
     }
 
     @Override
-    public List<Equipo> getAll() {
-        return List.of();
+    public Set<Equipo> getAll() {
+        return null;
     }
 
     @Override
-    public boolean save(Equipo obj) {
+    public boolean save(Equipo obj) throws IOException {
         return false;
     }
 

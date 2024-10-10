@@ -5,8 +5,9 @@ import org.example.boletin.gestionBaloncesto.Equipo;
 import org.example.boletin.gestionBaloncesto.daos.DaoEquipoClasificacion;
 import org.example.boletin.gestionBaloncesto.Equipo_clasificacion;
 
+import java.io.IOException;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Set;
 
 class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
     @Override
@@ -35,12 +36,12 @@ class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
     }
 
     @Override
-    public List<Equipo_clasificacion> getAll() {
-        return List.of();
+    public Set<Equipo_clasificacion> getAll() {
+        return null;
     }
 
     @Override
-    public boolean save(Equipo_clasificacion obj) {
+    public boolean save(Equipo_clasificacion obj) throws IOException {
         return false;
     }
 

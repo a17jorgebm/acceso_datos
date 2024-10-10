@@ -1,11 +1,12 @@
 package org.example.boletin.gestionBaloncesto.daos;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.Set;
 
 public interface DaoGenerico<T,K> {
-    T get(K id);
-    List<T> getAll();
-    boolean save(T obj);
+    T get(K id) throws IOException, ClassNotFoundException;
+    Set<T> getAll() throws IOException, ClassNotFoundException;
+    boolean save(T obj) throws IOException;
     boolean delete(T obj);
     boolean deleteAll();
     boolean deleteById(K id);

@@ -5,8 +5,9 @@ import org.example.boletin.gestionBaloncesto.Equipo;
 import org.example.boletin.gestionBaloncesto.Partido;
 import org.example.boletin.gestionBaloncesto.daos.DaoPartido;
 
+import java.io.IOException;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Set;
 
 public class ImpDaoPartido implements DaoPartido {
     @Override
@@ -35,12 +36,13 @@ public class ImpDaoPartido implements DaoPartido {
     }
 
     @Override
-    public List<Partido> getAll() {
-        return List.of();
+    public Set<Partido> getAll() throws IOException, ClassNotFoundException{
+        return null;
     }
 
+
     @Override
-    public boolean save(Partido obj) {
+    public boolean save(Partido obj) throws IOException {
         return false;
     }
 

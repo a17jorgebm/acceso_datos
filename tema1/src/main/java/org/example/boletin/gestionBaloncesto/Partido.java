@@ -1,10 +1,11 @@
 package org.example.boletin.gestionBaloncesto;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
 
-public class Partido {
+public class Partido implements Serializable {
     private Date fecha;
     private String equipoLocal;
     private String equipoVisitante;

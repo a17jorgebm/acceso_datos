@@ -1,6 +1,8 @@
 package org.example.boletin.gestionBaloncesto;
 
-public class Equipo_clasificacion {
+import java.io.Serializable;
+
+public class Equipo_clasificacion implements Serializable {
     private String idEquipo;
     private String idClasificacion;
 
