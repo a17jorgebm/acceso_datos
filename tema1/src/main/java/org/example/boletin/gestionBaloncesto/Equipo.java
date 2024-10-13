@@ -6,16 +6,24 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Equipo implements Serializable, Comparable<Equipo>{
-    private String nombre;
-    private Set<Clasificacion> clasificacions;
-    private int victorias;
-    private int derrotas;
-    private int puntosFavor;
-    private int puntosContra;
+    public static final String FICHEIRO_EQUIPO="equipos.dat";
 
-    public Equipo(String nombre,Set<Clasificacion> clasificacions) {
+    private String nombre;
+    private transient Set<Clasificacion> clasificacions;
+    private transient Set<Partido> partidos;
+    private transient int victorias;
+    private transient int derrotas;
+    private transient int puntosFavor;
+    private transient int puntosContra;
+
+    public Equipo(String nombre){
+        this.nombre=nombre;
+    }
+
+    public Equipo(String nombre,Set<Clasificacion> clasificacions,HashSet<Partido> partidos) {
         this.nombre = nombre;
         this.clasificacions=clasificacions;
+        calcularPuntosPartidos(partidos);
     }
 
     @Override
@@ -44,7 +52,28 @@ public class Equipo implements Serializable, Comparable<Equipo>{
     }
 
     private void calcularPuntosPartidos(HashSet<Partido> partidosEquipo){
-        //a partir dos partidos calcular todo
+        int victorias=0, derrotas=0, puntosFavor=0, puntosContra=0;
+        for (Partido partido : partidosEquipo){
+            if (partido.getMarcador().size()<2) continue;
+            int pFavorPartido=0;
+            int pContraPartido=0;
+            Set<String> clavesMarcador=partido.getMarcador().keySet();
+            for (String clave: clavesMarcador){
+                if (clave.equals(this.nombre)){
+                    pFavorPartido=partido.getMarcador().get(clave);
+                }else {
+                    pContraPartido=partido.getMarcador().get(clave);
+                }
+            }
+            if (pFavorPartido>pContraPartido) victorias++;
+            if (pFavorPartido<pContraPartido) derrotas++;
+            puntosFavor+=pFavorPartido;
+            puntosContra+=pContraPartido;
+        }
+        this.victorias=victorias;
+        this.derrotas=derrotas;
+        this.puntosFavor=puntosFavor;
+        this.puntosContra=puntosContra;
     }
 
     public String getNombre() {
@@ -77,5 +106,8 @@ public class Equipo implements Serializable, Comparable<Equipo>{
 
     public int getPuntosContra() {
         return puntosContra;
+    }
+    public int getDiferenciaPuntos(){
+        return puntosFavor-puntosContra;
     }
 }

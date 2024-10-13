@@ -12,14 +12,6 @@ public class Partido implements Serializable {
     private HashMap<String,Integer> marcador;
     private String clasificacion;
 
-    public Partido(Date fecha, String equipoLocal, String equipoVisitante, String clasificacion) {
-        this.fecha = fecha;
-        this.equipoLocal = equipoLocal;
-        this.equipoVisitante = equipoVisitante;
-        this.clasificacion = clasificacion;
-        marcador=new HashMap<>();
-    }
-
     public Partido(Date fecha, String equipoLocal, String equipoVisitante, String clasificacion, HashMap<String,Integer> marcador) {
         this.fecha = fecha;
         this.equipoLocal = equipoLocal;

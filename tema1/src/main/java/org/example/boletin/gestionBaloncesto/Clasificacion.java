@@ -17,7 +17,7 @@ public class Clasificacion implements Serializable, Comparable<Clasificacion> {
 
     @Override
     public boolean equals(Object o){
-        if (Objects.equals(o,this)) {return true;}
+        if (o == this) {return true;}
         if (o==null || !(o instanceof Clasificacion)){return false;}
         Clasificacion objeto=(Clasificacion) o;
         return Objects.equals(this.competicion,objeto.getCompeticion());
@@ -30,7 +30,7 @@ public class Clasificacion implements Serializable, Comparable<Clasificacion> {
 
     @Override
     public int compareTo(Clasificacion o) {
-        return 0;
+        return this.competicion.compareToIgnoreCase(o.getCompeticion());
     }
 
     public String getCompeticion() {

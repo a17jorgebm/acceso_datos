@@ -4,11 +4,12 @@ import org.example.boletin.gestionBaloncesto.Clasificacion;
 import org.example.boletin.gestionBaloncesto.Equipo;
 import org.example.boletin.gestionBaloncesto.Equipo_clasificacion;
 
-import java.util.HashSet;
+import java.io.IOException;
+import java.util.TreeSet;
 
 public interface DaoEquipoClasificacion extends DaoGenerico<Equipo_clasificacion,Equipo_clasificacion>{
-    HashSet<Equipo> getAllEquiposFromClasificacion(Clasificacion clasificacion);
-    HashSet<Clasificacion> getAllClasificacionesFromEquipo(Equipo equipo);
-    boolean deleteAllEquiposFromClasificacion(Clasificacion clasificacion);
-    boolean deleteAllClasificacionesFromEquipo(Equipo equipo);
+    TreeSet<Equipo> getAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException;
+    TreeSet<Clasificacion> getAllClasificacionesFromEquipo(Equipo equipo) throws ClassNotFoundException, IOException, ClassCastException;
+    boolean deleteAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException;
+    boolean deleteAllClasificacionesFromEquipo(Equipo equipo) throws ClassNotFoundException, IOException, ClassCastException;
 }
