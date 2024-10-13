@@ -1,0 +1,40 @@
+{
+  "ACB": [
+    {
+      "equipo" : "Real Madrid",
+      "jugados": 4,
+      "victorias": 4,
+      "derrotas": 0,
+      "favor": 374,
+      "contra": 311,
+      "diferencia": 63
+    },
+    {
+      "equipo" : "Baskonia",
+      "jugados": 4,
+      "victorias": 3,
+      "derrotas": 1,
+      "favor": 346,
+      "contra": 320,
+      "diferencia": 26
+    },
+    {
+      "equipo" : "Bàsquet Girona",
+      "jugados": 4,
+      "victorias": 3,
+      "derrotas": 1,
+      "favor": 353,
+      "contra": 333,
+      "diferencia": 20
+    },
+    {
+      "equipo" : "Barça",
+      "jugados": 4,
+      "victorias": 3,
+      "derrotas": 1,
+      "favor": 349,
+      "contra": 335,
+      "diferencia": 14
+    }
+  ]
+}
