@@ -13,6 +13,7 @@
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <!-- ejer1 -->
         <dependency>
@@ -49,6 +50,4 @@
         </dependency>
 
     </dependencies>
-
-
 </project>

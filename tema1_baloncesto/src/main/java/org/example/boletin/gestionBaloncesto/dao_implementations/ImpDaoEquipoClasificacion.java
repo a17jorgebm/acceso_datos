@@ -4,7 +4,6 @@ import org.example.boletin.gestionBaloncesto.*;
 import org.example.boletin.gestionBaloncesto.daos.DaoEquipoClasificacion;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -42,9 +41,10 @@ class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
 
     @Override
     public boolean deleteAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException{
-        HashSet<Equipo_clasificacion> equipos_clasi=this.getAll();
+        HashSet<Equipo_clasificacion> equipos_clasi=(HashSet<Equipo_clasificacion>) this.getAll();
         if (clasificacion==null) return false;
-
+        return true;
+        //facer esta merda
 
     }
 
