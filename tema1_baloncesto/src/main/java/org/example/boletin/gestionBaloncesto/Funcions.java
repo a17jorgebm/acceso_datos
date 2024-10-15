@@ -250,4 +250,18 @@ public class Funcions {
         return label;
     }
 
+    public static JLabel crearTexto(String texto,int tamano){
+        JLabel label=new JLabel(texto);
+        label.setForeground(Color.decode("#FFFFFF"));
+        label.setFont(new Font("Times New Roman",Font.BOLD,tamano));
+        return label;
+    }
+
+    public static JLabel crearTexto(String texto,int tamano, Color colorLetra){
+        JLabel label=new JLabel(texto);
+        label.setForeground(colorLetra);
+        label.setFont(new Font("Times New Roman",Font.BOLD,tamano));
+        return label;
+    }
+
 }
