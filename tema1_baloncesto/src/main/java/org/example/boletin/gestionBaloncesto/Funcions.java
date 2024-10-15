@@ -2,8 +2,12 @@ package org.example.boletin.gestionBaloncesto;
 
 import org.example.boletin.gestionBaloncesto.AppendObjectOutputStream;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.*;
 import java.nio.file.*;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -18,7 +22,7 @@ public class Funcions {
     public static <T> Set<T> lerFicheiroObxetos(String nomeFicheiro, Class<T> claseObjetos) throws IOException,ClassNotFoundException, ClassCastException{
         crearDirectorioArquivos();
         Path ficheiro=Paths.get(DIRECTORIO_ARQUIVOS,nomeFicheiro);
-        Set<T> obxetos=new TreeSet<>();
+        Set<T> obxetos=new LinkedHashSet<>();
 
         if (!Files.exists(ficheiro)){
             return obxetos;
@@ -39,7 +43,7 @@ public class Funcions {
         }catch (IOException e){
             throw e; //simplemente para poder cerrar recursos con try with resources
         }
-        return obxetos;
+        return (Set<T>) obxetos;
     }
 
     public static <T> T getObxetoFicheiroById(String nomeFicheiro, T objeto) throws IOException, ClassNotFoundException, ClassCastException{
@@ -184,6 +188,66 @@ public class Funcions {
         }
 
         return true;
+    }
+
+
+
+    //funcions de interfaz
+    public static void cambiarValoresGBC(
+            GridBagConstraints objetoConstraints,
+            int gridx,
+            int gridy,
+            double weightx,
+            double weighty
+    ){
+        objetoConstraints.gridx=gridx;
+        objetoConstraints.gridy=gridy;
+        objetoConstraints.weightx=weightx;
+        objetoConstraints.weighty=weighty;
+        //reseteanse os insets
+        objetoConstraints.insets=new Insets(0,0,0,0);
+    }
+    public static void cambiarValoresGBC(
+            GridBagConstraints objetoConstraints,
+            int gridx,
+            int gridy,
+            double weightx,
+            double weighty,
+            Insets insets
+    ){
+        objetoConstraints.gridx=gridx;
+        objetoConstraints.gridy=gridy;
+        objetoConstraints.weightx=weightx;
+        objetoConstraints.weighty=weighty;
+        objetoConstraints.insets=insets;
+    }
+    public static void cambiarValoresGBC(GridBagConstraints objetoConstraints,int gridx,int gridy,double weightx,double weighty,int gridwidth,int gridheight,int fill){
+        objetoConstraints.gridx=gridx;
+        objetoConstraints.gridy=gridy;
+        objetoConstraints.weightx=weightx;
+        objetoConstraints.weighty=weighty;
+        objetoConstraints.gridwidth=gridwidth;
+        objetoConstraints.gridheight=gridheight;
+        objetoConstraints.fill=fill;
+        //reseteanse os insets
+        objetoConstraints.insets=new Insets(0,0,0,0);
+    }
+    public static void cambiarValoresGBC(GridBagConstraints objetoConstraints,int gridx,int gridy,double weightx,double weighty,int gridwidth,int gridheight,int fill, Insets insets){
+        objetoConstraints.gridx=gridx;
+        objetoConstraints.gridy=gridy;
+        objetoConstraints.weightx=weightx;
+        objetoConstraints.weighty=weighty;
+        objetoConstraints.gridwidth=gridwidth;
+        objetoConstraints.gridheight=gridheight;
+        objetoConstraints.fill=fill;
+        objetoConstraints.insets=insets;
+    }
+
+    public static JLabel crearTexto(String texto){
+        JLabel label=new JLabel(texto);
+        label.setForeground(Color.decode("#FFFFFF"));
+        label.setFont(new Font("Times New Roman",Font.BOLD,15));
+        return label;
     }
 
 }

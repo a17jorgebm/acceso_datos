@@ -107,7 +107,12 @@ public class Equipo implements Serializable, Comparable<Equipo>{
     public int getPuntosContra() {
         return puntosContra;
     }
+
     public int getDiferenciaPuntos(){
         return puntosFavor-puntosContra;
     }
+
+    public int getPuntos(){ return victorias; }
+
+    public int getPartidosJugados(){ return victorias+derrotas; }
 }
