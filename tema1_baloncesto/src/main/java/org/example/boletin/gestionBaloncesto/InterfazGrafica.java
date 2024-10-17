@@ -77,7 +77,7 @@ public class InterfazGrafica {
             daoE.save(equipo4);
             daoE.save(equipo5);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
 // Crear una clasificación
@@ -86,7 +86,7 @@ public class InterfazGrafica {
         try {
             daoC.save(clasificacion);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
 // Asociar los equipos a la clasificación
@@ -104,7 +104,7 @@ public class InterfazGrafica {
             daoEC.save(equipoClasificacion4);
             daoEC.save(equipoClasificacion5);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
 // Crear varios partidos entre los equipos
@@ -145,7 +145,7 @@ public class InterfazGrafica {
             daoP.save(partido3);
             daoP.save(partido4);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         SwingUtilities.invokeLater(() -> {
             InterfazGrafica interfazGrafica = new InterfazGrafica();
@@ -231,7 +231,7 @@ public class InterfazGrafica {
             ImpDaoClasificacion daoClasi=new ImpDaoClasificacion();
             clasificacions=new LinkedHashSet<>(daoClasi.getAll());
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
             return;
         }
 
@@ -376,7 +376,7 @@ public class InterfazGrafica {
             equiposQueNonEstanNaClasificacion.removeAll(equiposClasificacion);
             partidosClasificacion=daoPartido.getAllPartidosFromClasificacion(clasificacionSeleccionada);
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
             return;
         }
 
@@ -528,7 +528,7 @@ public class InterfazGrafica {
             ImpDaoClasificacion daoClasi=new ImpDaoClasificacion();
             clasificacions=(LinkedHashSet<Clasificacion>) daoClasi.getAll();
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
             return;
         }*/
         TreeSet<Equipo> equipos=null;
@@ -536,7 +536,7 @@ public class InterfazGrafica {
             ImpDaoEquipo daoEquipos=new ImpDaoEquipo();
             equipos=new TreeSet<> (daoEquipos.getAll()) ;
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
             return;
         }
 
@@ -734,6 +734,7 @@ public class InterfazGrafica {
             verPanelEquipos();
         }catch (Exception e){
             mostrarMensajeInformativo("Error ao borrar o equipo",true);
+            e.printStackTrace();
         }
     }
 

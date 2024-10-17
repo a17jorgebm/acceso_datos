@@ -42,7 +42,12 @@ public class ImpDaoPartido implements DaoPartido {
 
     @Override
     public boolean deleteAllPartidosFromEquipo(Equipo equipo) throws IOException, ClassNotFoundException, ClassCastException{
-        return false;
+        HashSet<Partido> partidosEquipo=getAllPartidosFromEquipo(equipo);
+        ImpDaoPartido daoPartido=new ImpDaoPartido();
+        for (Partido p:partidosEquipo){
+            daoPartido.delete(p);
+        }
+        return true;
     }
 
     @Override
