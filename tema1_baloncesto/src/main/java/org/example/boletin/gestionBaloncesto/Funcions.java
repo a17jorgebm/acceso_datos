@@ -22,7 +22,7 @@ public class Funcions {
     public static <T> Set<T> lerFicheiroObxetos(String nomeFicheiro, Class<T> claseObjetos) throws IOException,ClassNotFoundException, ClassCastException{
         crearDirectorioArquivos();
         Path ficheiro=Paths.get(DIRECTORIO_ARQUIVOS,nomeFicheiro);
-        Set<T> obxetos=new LinkedHashSet<>();
+        Set<T> obxetos=new HashSet<>();
 
         if (!Files.exists(ficheiro)){
             return obxetos;

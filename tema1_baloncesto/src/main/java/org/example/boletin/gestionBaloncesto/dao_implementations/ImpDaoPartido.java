@@ -18,7 +18,7 @@ public class ImpDaoPartido implements DaoPartido {
     public HashSet<Partido> getAllPartidosFromEquipo(Equipo equipo) throws IOException, ClassNotFoundException, ClassCastException {
         return (HashSet<Partido>) this.getAll()
                 .stream()
-                .filter(p -> (p.getEquipoLocal().equals(equipo) || p.getEquipoVisitante().equals(equipo)))
+                .filter(p -> (p.getEquipoLocal().equals(equipo.getNombre()) || p.getEquipoVisitante().equals(equipo.getNombre())))
                 .collect(Collectors.toSet());
     }
 
@@ -26,16 +26,17 @@ public class ImpDaoPartido implements DaoPartido {
     public HashSet<Partido> getAllPartidosFromClasificacion(Clasificacion clasificacion) throws IOException, ClassNotFoundException, ClassCastException{
         return (HashSet<Partido>) this.getAll()
                 .stream()
-                .filter(p -> p.getClasificacion().equals(clasificacion))
+                .filter(p -> p.getClasificacion().equals(clasificacion.getCompeticion()))
                 .collect(Collectors.toSet());
     }
 
     @Override
     public HashSet<Partido> getAllPartidosFromEquipoInClasificacion(Equipo equipo, Set<Clasificacion> clasificacion) throws IOException, ClassNotFoundException, ClassCastException{
-        return (HashSet<Partido>) this.getAll()
+        HashSet<Partido> partidos=(HashSet<Partido>) this.getAll();
+        return (HashSet<Partido>) partidos
                 .stream()
-                .filter(p -> clasificacion.contains(p.getClasificacion()) &&
-                        (p.getEquipoLocal().equals(equipo) || p.getEquipoVisitante().equals(equipo)))
+                .filter(p -> clasificacion.contains(new Clasificacion(p.getClasificacion())) &&
+                        (p.getEquipoLocal().equals(equipo.getNombre()) || p.getEquipoVisitante().equals(equipo.getNombre())))
                 .collect(Collectors.toSet());
     }
 

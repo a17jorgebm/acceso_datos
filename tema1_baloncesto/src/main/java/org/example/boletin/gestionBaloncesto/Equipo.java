@@ -23,6 +23,7 @@ public class Equipo implements Serializable, Comparable<Equipo>{
     public Equipo(String nombre,Set<Clasificacion> clasificacions,HashSet<Partido> partidos) {
         this.nombre = nombre;
         this.clasificacions=clasificacions;
+        this.partidos=partidos;
         calcularPuntosPartidos(partidos);
     }
 
@@ -40,15 +41,38 @@ public class Equipo implements Serializable, Comparable<Equipo>{
     }
 
     @Override
-    public int compareTo(Equipo o) {
-        int diferenciaThis=this.puntosFavor-this.puntosContra;
-        int difereniaOtro=o.getPuntosFavor()-o.getPuntosContra();
-        if (o.getVictorias()<this.getVictorias() || difereniaOtro<diferenciaThis){
-            return 1;
-        }else if (o.getVictorias()>this.getVictorias() || difereniaOtro>diferenciaThis){
-            return -1;
+    public int compareTo(Equipo o) { //para que ordene de maior a menor
+        //primeiro comparanse as victorias
+        if (this.victorias != o.getVictorias()) {
+            if (this.victorias < o.getVictorias()){
+                return 1;
+            }
         }
-        return 0;
+
+        //se teñen as mismas victorias comparanse por diferencia de puntos
+        if (this.getDiferenciaPuntos() != o.getDiferenciaPuntos()) {
+            if (this.getDiferenciaPuntos() < o.getDiferenciaPuntos()){
+                return 1;
+            }
+        }
+
+        //e se volven a empatar polo nombre, para que poidan meterse no TreeSet
+        return this.nombre.compareTo(o.nombre);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder=new StringBuilder();
+        builder.append("<html>Nombre: ").append(nombre).append("<br>");
+        builder.append("<html>Victorias: ").append(victorias).append("<br>");
+        builder.append("<html>Derrotas: ").append(derrotas).append("<br>");
+        builder.append("<html>Pts. favor: ").append(puntosFavor).append("<br>");
+        builder.append("<html>Pts. contra: ").append(puntosContra).append("<br>");
+        builder.append("<html>Dif pts: ").append(getDiferenciaPuntos()).append("<br>");
+        builder.append("<html>Partidos jugados: ").append(getPartidosJugados()).append("<br>");
+        builder.append("<html>Puntos: ").append(getPuntos()).append("<br>");
+        return builder.toString();
+
     }
 
     private void calcularPuntosPartidos(HashSet<Partido> partidosEquipo){
