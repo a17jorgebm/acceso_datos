@@ -9,12 +9,12 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
+public class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
     public static final String FICHEIRO_EQUIPOS_CLASIFICACION="equipos_clasificacion.ser";
 
     @Override
     public TreeSet<Equipo> getAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException{
-        TreeSet<Equipo_clasificacion> eq_clas = (TreeSet<Equipo_clasificacion>) this.getAll()
+        Set<Equipo_clasificacion> eq_clas = new HashSet<>(this.getAll())
                 .stream()
                 .filter(ec -> ec.getIdClasificacion().equals(clasificacion.getCompeticion()))
                 .collect(Collectors.toSet());
@@ -44,7 +44,7 @@ class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
         HashSet<Equipo_clasificacion> equipos_clasi=(HashSet<Equipo_clasificacion>) this.getAll();
         if (clasificacion==null) return false;
         return true;
-        //facer esta merda
+
 
     }
 
