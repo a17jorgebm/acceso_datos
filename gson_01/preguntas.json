@@ -1,0 +1,16 @@
+[
+  {
+    "pregunta": "De que color es el blanco",
+    "tipoPregunta": "BOOLEAN",
+    "categoria": {
+      "categoria": "Arte"
+    },
+    "dificultad": "EASY",
+    "correcta": "Blanco",
+    "incorrectas": [
+      "Azul",
+      "Marron",
+      "Verde"
+    ]
+  }
+]
