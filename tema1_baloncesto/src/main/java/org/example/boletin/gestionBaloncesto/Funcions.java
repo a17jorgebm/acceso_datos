@@ -73,8 +73,6 @@ public class Funcions {
 
 
     public static <T> boolean checkIfObjectExists(String nomeFicheiro, T objeto) throws IOException,ClassNotFoundException, ClassCastException{
-        if (objeto==null) return false;
-
         crearDirectorioArquivos();
         Path ficheiro=Paths.get(DIRECTORIO_ARQUIVOS,nomeFicheiro);
         Class<?> claseObjeto= objeto.getClass();

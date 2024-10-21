@@ -13,7 +13,7 @@ public class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
     public static final String FICHEIRO_EQUIPOS_CLASIFICACION="equipos_clasificacion.ser";
 
     @Override
-    public TreeSet<Equipo> getAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException{
+    public Set<Equipo> getAllEquiposFromClasificacion(Clasificacion clasificacion) throws ClassNotFoundException, IOException, ClassCastException{
         Set<Equipo_clasificacion> eq_clas = new HashSet<>(this.getAll())
                 .stream()
                 .filter(ec -> ec.getIdClasificacion().equals(clasificacion.getCompeticion()))
@@ -26,12 +26,12 @@ public class ImpDaoEquipoClasificacion implements DaoEquipoClasificacion{
     }
 
     @Override
-    public TreeSet<Clasificacion> getAllClasificacionesFromEquipo(Equipo equipo) throws ClassNotFoundException, IOException, ClassCastException{
-        TreeSet<Equipo_clasificacion> eq_clas = (TreeSet<Equipo_clasificacion>) this.getAll()
+    public Set<Clasificacion> getAllClasificacionesFromEquipo(Equipo equipo) throws ClassNotFoundException, IOException, ClassCastException{
+        HashSet<Equipo_clasificacion> eq_clas = (HashSet<Equipo_clasificacion>) (new HashSet<>(this.getAll())
                 .stream()
                 .filter(ec -> ec.getIdEquipo().equals(equipo.getNombre()))
-                .collect(Collectors.toSet());
-        TreeSet<Clasificacion> clasificacions=new TreeSet<>();
+                .collect(Collectors.toSet()));
+        HashSet<Clasificacion> clasificacions=new HashSet<>();
         ImpDaoClasificacion daoCla=new ImpDaoClasificacion();
         for (Equipo_clasificacion ec : eq_clas){
             clasificacions.add(daoCla.get(ec.getIdClasificacion()));
