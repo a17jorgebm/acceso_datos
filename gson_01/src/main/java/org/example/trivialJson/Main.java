@@ -1,13 +1,13 @@
 package org.example.trivialJson;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
-import java.nio.file.Files;
+import java.lang.reflect.Type;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Pregunta pregunta=new Pregunta()
                 .setPregunta("De que color es el blanco")
-                .setTipoPregunta(Tipo.BOOLEAN)
+                .setTipoPregunta(TipoPregunta.BOOLEAN)
                 .setCategoria(new Categoria("Arte"))
                 .setDificultad(Dificultad.EASY)
                 .setCorrecta("Blanco")
@@ -43,5 +43,17 @@ public class Main {
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
+    }
+
+    public void main2(){
+        Gson gson=new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(LocalDate.class, new JsonSerializer<LocalDate>() {
+                    @Override
+                    public JsonElement serialize(LocalDate localDate, Type type, JsonSerializationContext jsonSerializationContext) {
+                        return new JsonPrimitive(localDate.toString());
+                    }
+                })
+                .create();
     }
 }

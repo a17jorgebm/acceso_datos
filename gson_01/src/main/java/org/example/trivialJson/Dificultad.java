@@ -13,7 +13,10 @@ public enum Dificultad {
         return dificultad;
     }
 
-    public void setDificultad(String dificultad) {
-        this.dificultad = dificultad;
+    public Dificultad getDificultad(String dificultad){
+        for (Dificultad d: Dificultad.values()){
+            if (d.getDificultad().equalsIgnoreCase(dificultad)) return d;
+        }
+        return null;
     }
 }

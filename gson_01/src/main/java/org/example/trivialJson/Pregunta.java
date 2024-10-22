@@ -1,36 +1,39 @@
 package org.example.trivialJson;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Pregunta {
+public class Pregunta implements Comparable<Pregunta>, Serializable {
+    private Long idPregunta;
     private String pregunta;
-    private Tipo tipoPregunta;
+    private TipoPregunta tipoPregunta;
     private Categoria categoria;
     private Dificultad dificultad;
-    private String correcta;
-    private List<String> incorrectas;
+    private List<Opcion> opcions;
 
     public Pregunta(){} //para usar os setters como builder para crear o obxeto
 
-    public Pregunta(String pregunta, Tipo tipoPregunta, Categoria categoria, Dificultad dificultad, String correcta, List<String> incorrectas) {
+    public Pregunta(String pregunta) {
         this.pregunta = pregunta;
-        this.tipoPregunta = tipoPregunta;
-        this.categoria = categoria;
-        this.dificultad = dificultad;
-        this.correcta = correcta;
-        this.incorrectas = incorrectas;
     }
 
     @Override
     public String toString() {
-        return "Pregunta{" +
-                "pregunta='" + pregunta + '\'' +
-                ", tipoPregunta=" + tipoPregunta +
-                ", categoria=" + categoria +
-                ", dificultad=" + dificultad +
-                ", correcta='" + correcta + '\'' +
-                ", incorrectas=" + incorrectas +
-                '}';
+        return "";
+    }
+
+    @Override
+    public int compareTo(Pregunta o) {
+        return 0;
+    }
+
+    public Long getIdPregunta() {
+        return idPregunta;
+    }
+
+    public Pregunta setIdPregunta(Long idPregunta) {
+        this.idPregunta = idPregunta;
+        return this;
     }
 
     public String getPregunta() {
@@ -42,11 +45,11 @@ public class Pregunta {
         return this;
     }
 
-    public Tipo getTipoPregunta() {
+    public TipoPregunta getTipoPregunta() {
         return tipoPregunta;
     }
 
-    public Pregunta setTipoPregunta(Tipo tipoPregunta) {
+    public Pregunta setTipoPregunta(TipoPregunta tipoPregunta) {
         this.tipoPregunta = tipoPregunta;
         return this;
     }
@@ -69,21 +72,12 @@ public class Pregunta {
         return this;
     }
 
-    public String getCorrecta() {
-        return correcta;
+    public List<Opcion> getOpcions() {
+        return opcions;
     }
 
-    public Pregunta setCorrecta(String correcta) {
-        this.correcta = correcta;
-        return this;
-    }
-
-    public List<String> getIncorrectas() {
-        return incorrectas;
-    }
-
-    public Pregunta setIncorrectas(List<String> incorrectas) {
-        this.incorrectas = incorrectas;
+    public Pregunta setOpcions(List<Opcion> opcions) {
+        this.opcions = opcions;
         return this;
     }
 }
