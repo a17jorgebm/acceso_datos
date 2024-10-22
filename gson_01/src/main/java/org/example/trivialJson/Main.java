@@ -18,8 +18,12 @@ public class Main {
                 .setTipoPregunta(TipoPregunta.BOOLEAN)
                 .setCategoria(new Categoria("Arte"))
                 .setDificultad(Dificultad.EASY)
-                .setCorrecta("Blanco")
-                .setIncorrectas(List.of("Azul","Marron","Verde"));
+                .setOpcions(List.of(
+                        new Opcion("Caballo",true),
+                        new Opcion("Yegua",false),
+                        new Opcion("Camaleon",false),
+                        new Opcion("Negro",false)
+                ));
 
         Gson gson=new GsonBuilder()
                 .setPrettyPrinting()

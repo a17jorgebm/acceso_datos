@@ -1,6 +1,8 @@
 package org.example.trivialJson;
 
-public enum Dificultad {
+import java.util.Objects;
+
+public enum Dificultad implements Comparable<Dificultad>{
     EASY("Fácil"), MEDIUM("Media"), HARD("Difícil");
 
     private String dificultad;

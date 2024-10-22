@@ -2,7 +2,7 @@ package org.example.trivialJson;
 
 import java.util.Objects;
 
-public class Categoria {
+public class Categoria implements Comparable<Categoria>{
     private static final String DEFAULT_CATEGORY="General";
 
     private final String nombre;
@@ -20,6 +20,12 @@ public class Categoria {
         return "Categoria{" +
                 "categoria='" + nombre + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Categoria o) {
+        if (this==o) return 0;
+        return this.nombre.compareTo(o.getNombre());
     }
 
     @Override

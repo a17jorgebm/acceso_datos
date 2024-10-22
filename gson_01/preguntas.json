@@ -3,14 +3,26 @@
     "pregunta": "De que color es el blanco",
     "tipoPregunta": "BOOLEAN",
     "categoria": {
-      "categoria": "Arte"
+      "nombre": "Arte"
     },
     "dificultad": "EASY",
-    "correcta": "Blanco",
-    "incorrectas": [
-      "Azul",
-      "Marron",
-      "Verde"
+    "opcions": [
+      {
+        "enunciado": "Caballo",
+        "correcta": true
+      },
+      {
+        "enunciado": "Yegua",
+        "correcta": false
+      },
+      {
+        "enunciado": "Camaleon",
+        "correcta": false
+      },
+      {
+        "enunciado": "Negro",
+        "correcta": false
+      }
     ]
   }
 ]

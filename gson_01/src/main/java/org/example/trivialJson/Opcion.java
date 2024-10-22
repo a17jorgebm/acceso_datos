@@ -21,4 +21,20 @@ public final class Opcion {
     public String toString() {
         return this.enunciado + (correcta ? "*" : "");
     }
+
+    public String getEnunciado() {
+        return enunciado;
+    }
+
+    public void setEnunciado(String enunciado) {
+        this.enunciado = enunciado;
+    }
+
+    public boolean isCorrecta() {
+        return correcta;
+    }
+
+    public void setCorrecta(boolean correcta) {
+        this.correcta = correcta;
+    }
 }
