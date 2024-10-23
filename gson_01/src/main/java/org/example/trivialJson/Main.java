@@ -13,6 +13,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         Pregunta pregunta=new Pregunta()
                 .setPregunta("De que color es el blanco")
                 .setTipoPregunta(TipoPregunta.BOOLEAN)
@@ -47,6 +48,8 @@ public class Main {
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
+
+         */
     }
 
     public void main2(){

@@ -1,0 +1,123 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Sports",
+      "question": "Who was the British professional wrestler Shirley Crabtree better known as?",
+      "correct_answer": "Big Daddy",
+      "incorrect_answers": [
+        "Giant Haystacks",
+        "Kendo Nagasaki",
+        "Masambula"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Science: Mathematics",
+      "question": "The proof for the Chinese Remainder Theorem used in Number Theory was NOT developed by its first publisher, Sun Tzu.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In Undertale, how much do Spider Donuts cost in Hotland?",
+      "correct_answer": "9999G",
+      "incorrect_answers": [
+        "7G",
+        "40G",
+        "12G"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In what year did the manga &quot;Ping Pong&quot; begin serialization?",
+      "correct_answer": "1996",
+      "incorrect_answers": [
+        "2014",
+        "2010",
+        "2003"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science: Computers",
+      "question": "Which one of these is not an official development name for a Ubuntu release?",
+      "correct_answer": "Mystic Mansion",
+      "incorrect_answers": [
+        "Trusty Tahr",
+        "Utopic Unicorn",
+        "Wily Werewolf"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which ones of these Mario Kart games was made for the Gameboy Advance?",
+      "correct_answer": "Mario Kart: Super Circuit",
+      "incorrect_answers": [
+        "Mario Kart: Double Dash",
+        "Mario Kart 64",
+        "Super Mario Kart"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Television",
+      "question": "Which of these voices wasn&#039;t a choice for the House AI in &quot;The Simpsons Treehouse of Horror&quot; short, House of Whacks?",
+      "correct_answer": "George Clooney",
+      "incorrect_answers": [
+        "Matthew Perry",
+        "Dennis Miller",
+        "Pierce Brosnan"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In which mall does &quot;Dead Rising&quot; take place?",
+      "correct_answer": "Willamette Parkview Mall",
+      "incorrect_answers": [
+        "Liberty Mall",
+        "Twin Pines Mall",
+        "Central Square Shopping Center"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Animals",
+      "question": "What is the name of a rabbit&#039;s abode?",
+      "correct_answer": "Burrow",
+      "incorrect_answers": [
+        "Nest",
+        "Den",
+        "Dray"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question": "What is the full name of the footballer &quot;Cristiano Ronaldo&quot;?",
+      "correct_answer": "Cristiano Ronaldo dos Santos Aveiro",
+      "incorrect_answers": [
+        "Cristiano Ronaldo los Santos Diego",
+        "Cristiano Armando Diego Ronaldo",
+        "Cristiano Luis Armando Ronaldo"
+      ]
+    }
+  ]
+}
