@@ -7,10 +7,23 @@ import com.google.gson.JsonParseException;
 import org.example.ejersTypeAdapter.JsonDeserializerAndSerializer.ejer2.Direccion;
 
 import java.lang.reflect.Type;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DireccionJsonDeserializer implements JsonDeserializer<Direccion> {
     @Override
     public Direccion deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-        return null;
+        String direccionCompleta=jsonElement.getAsString();
+        Matcher regex= Pattern.compile("^(.*),\\s*([^,]+)$").matcher(direccionCompleta);
+        String calle=null;
+        String ciudad=null;
+        if (regex.find()){
+            calle=regex.group(1).trim().substring(1);
+            ciudad=regex.group(2).trim().substring(0,regex.group(2).trim().length()-1);
+        }else {
+            throw new JsonParseException("Dirección con formato incorrecto");
+        }
+
+        return new Direccion(calle,ciudad);
     }
 }

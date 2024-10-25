@@ -14,6 +14,15 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", direccion=" + direccion +
+                '}';
+    }
+
     public String getNombre() {
         return nombre;
     }
