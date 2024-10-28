@@ -18,8 +18,8 @@ public class DireccionJsonDeserializer implements JsonDeserializer<Direccion> {
         String calle=null;
         String ciudad=null;
         if (regex.find()){
-            calle=regex.group(1).trim().substring(1);
-            ciudad=regex.group(2).trim().substring(0,regex.group(2).trim().length()-1);
+            calle=regex.group(1).trim();
+            ciudad=regex.group(2).trim();
         }else {
             throw new JsonParseException("Dirección con formato incorrecto");
         }
