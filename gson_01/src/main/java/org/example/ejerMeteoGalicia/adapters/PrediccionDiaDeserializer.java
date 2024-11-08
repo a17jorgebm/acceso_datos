@@ -7,6 +7,8 @@ import org.example.ejerMeteoGalicia.VariableMeteo;
 
 import java.lang.reflect.Type;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PrediccionDiaDeserializer implements JsonDeserializer<PrediccionDia> {
     @Override
@@ -19,31 +21,24 @@ public class PrediccionDiaDeserializer implements JsonDeserializer<PrediccionDia
         int tMin= getValorCheckingExistanceAndNulls(objeto, "tMin");
         int uvMax= getValorCheckingExistanceAndNulls(objeto, "uvMax");
 
-        VariableFranxa ceo, pchoiva, tmaxFranxa, tminFranxa, vento;
+        List<VariableFranxa> franxas=new ArrayList<>();
 
-        //o switch non fai falta, porque repite o uso do enum. CORREGIR
-        for (String nome: objeto.keySet()){
-            if (objeto.get(nome).isJsonObject()){
-                VariableMeteo v = VariableMeteo.getVariableMeteo(nome);
-                switch (VariableMeteo.getVariableMeteo(nome)){
-                    case CIELO -> ceo=crearVariableFranxa(VariableMeteo.CIELO, objeto.get(nome).getAsJsonObject());
-                    case LLUVIA -> pchoiva=crearVariableFranxa(VariableMeteo.LLUVIA, objeto.get(nome).getAsJsonObject());
-                    case TEMPERATURA_MAXIMA -> tmaxFranxa=crearVariableFranxa(VariableMeteo.TEMPERATURA_MAXIMA, objeto.get(nome).getAsJsonObject());
-                    case TEMPERATURA_MINIMA -> tminFranxa=crearVariableFranxa(VariableMeteo.TEMPERATURA_MINIMA, objeto.get(nome).getAsJsonObject());
-                    case VIENTO -> vento=crearVariableFranxa(VariableMeteo.VIENTO, objeto.get(nome).getAsJsonObject());
-                }
+        for (VariableMeteo varMeteo: VariableMeteo.values()){
+            if (objeto.has(varMeteo.getNome())){
+                JsonObject jsonVarFranxa=objeto.get(varMeteo.getNome()).getAsJsonObject();
+                VariableFranxa variableFranxa=new VariableFranxa(
+                        varMeteo,
+                        jsonVarFranxa.get("manha").getAsInt(),
+                        jsonVarFranxa.get("noite").getAsInt(),
+                        jsonVarFranxa.get("tarde").getAsInt()
+                );
+                franxas.add(variableFranxa);
             }
         }
 
-        return new PrediccionDia();
-
-    }
-
-    private VariableFranxa crearVariableFranxa(VariableMeteo tipo, JsonObject objetoJson){
-        int manha=objetoJson.get("manha").getAsInt();
-        int noite=objetoJson.get("noite").getAsInt();
-        int tarde=objetoJson.get("tarde").getAsInt();
-        return new VariableFranxa(tipo,manha,noite,tarde);
+        PrediccionDia prediccionDia = new PrediccionDia(dataPrevision,nivelAviso,tMax,tMin,uvMax);
+        prediccionDia.setListaVariableFranxa(franxas);
+        return prediccionDia;
     }
 
     private int getValorCheckingExistanceAndNulls(JsonObject o, String nomePropiedade){

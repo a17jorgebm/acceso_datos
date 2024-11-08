@@ -22,6 +22,9 @@ public class PrediccionDeserializer implements JsonDeserializer<Prediccion> {
             prediccionDias.add(prediccionDia);
         });
 
-        return new Prediccion(concello);
+        Prediccion prediccion=new Prediccion(concello);
+        prediccion.setListaPredDiaConcello(prediccionDias);
+
+        return prediccion;
     }
 }
