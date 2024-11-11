@@ -1,0 +1,102 @@
+2024-11-11 09:50:10.527081+01:00 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1624)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.populateClientAppName(GenericDataSource.java:199)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.openConnection(GenericDataSource.java:162)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.openConnection(H2DataSource.java:74)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:106)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:119)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.<init>(GenericDataSource.java:124)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.<init>(H2DataSource.java:43)
+	at org.jkiss.dbeaver.ext.h2.model.H2MetaModel.createDataSourceImpl(H2MetaModel.java:55)
+	at org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider.openDataSource(GenericDataSourceProvider.java:106)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1381)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1245)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1035)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.runSync(ConnectJob.java:109)
+	at org.jkiss.dbeaver.ui.actions.datasource.DataSourceHandler.connectToDataSource(DataSourceHandler.java:113)
+	at org.jkiss.dbeaver.ui.actions.datasource.UIServiceConnectionsImpl.initConnection(UIServiceConnectionsImpl.java:87)
+	at org.jkiss.dbeaver.model.DBUtils.initDataSource(DBUtils.java:2505)
+	at org.jkiss.dbeaver.model.navigator.DBNDataSource.initializeNode(DBNDataSource.java:158)
+	at org.jkiss.dbeaver.model.navigator.DBNDatabaseNode.getChildren(DBNDatabaseNode.java:227)
+	at org.jkiss.dbeaver.model.navigator.DBNDatabaseNode.getChildren(DBNDatabaseNode.java:1)
+	at org.jkiss.dbeaver.model.navigator.DBNUtils.getNodeChildrenFiltered(DBNUtils.java:91)
+	at org.jkiss.dbeaver.ui.navigator.database.load.TreeLoadService.evaluate(TreeLoadService.java:49)
+	at org.jkiss.dbeaver.ui.navigator.database.load.TreeLoadService.evaluate(TreeLoadService.java:1)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:94)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:78)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-11-11 09:53:00.646763+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE proba(\000a\0009id INTEGER NOT NULL PRIMARY KEY [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a\0009\000a)"; se esperaba "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE proba(\000a\0009id INTEGER NOT NULL PRIMARY KEY [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a\0009\000a)"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE proba(
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nombre TEXT NOT NULL
+	
+) [42001-232]
+2024-11-11 09:53:38.085114+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a)"; se esperaba "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a)"; expected "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE proba(
+	id INTEGER PRIMARY KEY NOT NULL AUTOINCREMENT,
+	nombre TEXT NOT NULL
+) [42001-232]
+2024-11-11 09:57:30.115895+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a)"; se esperaba "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]AUTOINCREMENT,\000a\0009nombre TEXT NOT NULL\000a)"; expected "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER PRIMARY KEY NOT NULL AUTOINCREMENT,
+	nombre TEXT NOT NULL
+) [42001-232]
+2024-11-11 09:58:08.690240+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL\000a)"; se esperaba "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL\000a)"; expected "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER PRIMARY KEY NOT NULL IDENTITY,
+	nombre TEXT NOT NULL
+) [42001-232]
+2024-11-11 09:58:43.266443+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY(1,1),\000a\0009nombre TEXT NOT NULL\000a)"; se esperaba "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY(1,1),\000a\0009nombre TEXT NOT NULL\000a)"; expected "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER PRIMARY KEY NOT NULL IDENTITY(1,1),
+	nombre TEXT NOT NULL
+) [42001-232]
+2024-11-11 10:00:22.245109+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL\000a)"; se esperaba "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER PRIMARY KEY NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL\000a)"; expected "CONSTRAINT, COMMENT, UNIQUE, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER PRIMARY KEY NOT NULL IDENTITY,
+	nombre TEXT NOT NULL
+) [42001-232]
+2024-11-11 10:01:09.330957+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; se esperaba "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; expected "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER NOT NULL IDENTITY,
+	nombre TEXT NOT NULL,
+	PRIMARY KEY (id)
+	
+) [42001-232]
+2024-11-11 10:02:45.490551+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS PUBLIC.proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; se esperaba "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PUBLIC.proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; expected "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PUBLIC.proba(
+	id INTEGER NOT NULL IDENTITY,
+	nombre TEXT NOT NULL,
+	PRIMARY KEY (id)
+	
+) [42001-232]
+2024-11-11 10:03:24.385826+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; se esperaba "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS proba(\000a\0009id INTEGER NOT NULL [*]IDENTITY,\000a\0009nombre TEXT NOT NULL,\000a\0009PRIMARY KEY (id)\000a\0009\000a)"; expected "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS proba(
+	id INTEGER NOT NULL IDENTITY,
+	nombre TEXT NOT NULL,
+	PRIMARY KEY (id)
+	
+) [42001-232]
