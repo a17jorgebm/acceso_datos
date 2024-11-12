@@ -1,0 +1,42 @@
+{
+  "A Coruña": [
+    {
+      "id": 15001,
+      "nombre": "Abegondo"
+    },
+    {
+      "id": 15002,
+      "nombre": "Ames"
+    }
+  ],
+  "Lugo": [
+    {
+      "id": 27001,
+      "nombre": "Abadín"
+    },
+    {
+      "id": 27002,
+      "nombre": "Alfoz"
+    }
+  ],
+  "Ourense": [
+    {
+      "id": 32001,
+      "nombre": "Allariz"
+    },
+    {
+      "id": 32002,
+      "nombre": "Amoeiro"
+    }
+  ],
+  "Pontevedra": [
+    {
+      "id": 36001,
+      "nombre": "A Cañiza"
+    },
+    {
+      "id": 36002,
+      "nombre": "A Estrada"
+    }
+  ]
+}
