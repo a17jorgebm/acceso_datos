@@ -7,6 +7,7 @@ public class Main {
         Connection connection=null;
         try {
             connection=BibliotecaConnectionManager.getInstance().getConnection();
+            System.out.println(connection);
         }catch (RuntimeException e){
             System.out.println(e.getMessage());
             System.exit(1);

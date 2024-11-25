@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BibliotecaConnectionManager {
-    private static final String DATABASE_URL="jdbc:h2:/home/sanclemente.local/a17jorgebm/Documentos/acceso_dats/UD01/03_bd/h2/db/biblioteca2";
+    private static final String DATABASE_URL="jdbc:h2:/home/sanclemente.local/a17jorgebm/Documentos/acceso_datos/UD01/03_bd/h2/db/biblioteca2;IFEXISTS=TRUE";
 
     private static volatile BibliotecaConnectionManager instance;
 
