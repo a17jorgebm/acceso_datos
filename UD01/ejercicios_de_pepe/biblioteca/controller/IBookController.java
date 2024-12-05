@@ -1,7 +1,9 @@
-package org.example.biblioteca.controller;
+package com.pepinho.programacion.biblioteca.controller;
 
-import org.example.biblioteca.modelo.Book;
-import org.example.biblioteca.vista.IBookView;
+import com.pepinho.programacion.biblioteca.model.Book;
+import com.pepinho.programacion.biblioteca.model.BookDAO;
+import com.pepinho.programacion.biblioteca.model.DAO;
+import com.pepinho.programacion.biblioteca.view.IBookView;
 
 /**
  * Interface for the BookController class.
@@ -31,7 +33,7 @@ public interface IBookController {
 
     public void setView(IBookView view);
 
-    //public void setDao(DAO<Book> dao);
+    public void setDao(DAO<Book> dao);
 
 
 }
