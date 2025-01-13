@@ -1,0 +1,28 @@
+
+y
+java:S1192ƒ"VDefine a constant instead of duplicating this literal "Error al actualizar: " 3 times.(áßÏÕşÿÿÿÿ8É÷ú’ş1
+i
+java:S1192'"GDefine a constant instead of duplicating this literal "idBook" 3 times.(ÂÁ¼·ıÿÿÿÿ8Ê÷ú’ş1
+k
+java:S1192y"IDefine a constant instead of duplicating this literal "UPDATE  " 3 times.(Îóşşÿÿÿÿ8Ê÷ú’ş1
+R
+java:S1141¿"5Extract this nested try block into a separate method.(‚Ë•8Ë÷ú’ş1
+R
+java:S1141Ø"5Extract this nested try block into a separate method.(‚Ë•8Ë÷ú’ş1
+~
+java:S1488'"\Immediately return this expression instead of assigning it to the temporary variable "book".(ÂÁ¼·ıÿÿÿÿ8Í÷ú’ş1
+L	java:S1062"+Replace this use of System.out by a logger.(øÛÂúÿÿÿÿ8ëøú’ş1
+G	java:S106K"+Replace this use of System.out by a logger.(ÃÇï¨8óøú’ş1
+L	java:S106Z"+Replace this use of System.out by a logger.(šˆãıùÿÿÿÿ8ûøú’ş1
+G	java:S106f"+Replace this use of System.out by a logger.(úá–Ë8ùú’ş1
+M	java:S106ƒ"+Replace this use of System.out by a logger.(áßÏÕşÿÿÿÿ8Çùú’ş1
+H	java:S106’"+Replace this use of System.out by a logger.(À¢”ı8Óùú’ş1
+H	java:S106¢"+Replace this use of System.out by a logger.(À¢”ı8Øùú’ş1
+H	java:S106¶"+Replace this use of System.err by a logger.(Ş©ªµ8ãùú’ş1
+H	java:S106È"+Replace this use of System.out by a logger.(¥’¡8†úú’ş1
+H	java:S106Ë"+Replace this use of System.out by a logger.(™ğ„‡8ˆúú’ş1
+M	java:S106Ï"+Replace this use of System.out by a logger.(áßÏÕşÿÿÿÿ8—úú’ş1
+M	java:S106à"+Replace this use of System.out by a logger.(ÛĞµæüÿÿÿÿ8£úú’ş1
+H	java:S106â"+Replace this use of System.out by a logger.(™ğ„‡8¤úú’ş1
+M	java:S106æ"+Replace this use of System.out by a logger.(áßÏÕşÿÿÿÿ8¥úú’ş1
+H	java:S106ó"+Replace this use of System.out by a logger.(×ïàë8¨úú’ş1

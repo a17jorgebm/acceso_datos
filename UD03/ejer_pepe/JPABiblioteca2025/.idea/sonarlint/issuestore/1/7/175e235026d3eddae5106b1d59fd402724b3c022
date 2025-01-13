@@ -1,0 +1,16 @@
+
+C
+java:S1604R"(Make this anonymous inner class a lambda(Ñù ¥üÿÿÿÿ
+C
+java:S1604["(Make this anonymous inner class a lambda(¦Œ¹óıÿÿÿÿ
+J
+java:S1948"/Make "bookControler" transient or serializable.(àşçûÿÿÿÿ
+Q	java:S125p"<This block of commented-out lines of code should be removed.(¾‘°
+Q	java:S125u"<This block of commented-out lines of code should be removed.(Ú²¶
+W	java:S125ë"<This block of commented-out lines of code should be removed.(†éøÄşÿÿÿÿ
+^
+java:S1126ô"BReplace this if-then-else statement by a single method invocation.(µÏÜ×úÿÿÿÿ
+Y
+java:S1126ø"BReplace this if-then-else statement by a single method invocation.( ù¦É
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Æé›ïıÿÿÿÿ

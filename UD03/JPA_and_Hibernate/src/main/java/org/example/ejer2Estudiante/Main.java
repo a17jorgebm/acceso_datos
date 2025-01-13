@@ -1,13 +1,15 @@
 package org.example.ejer2Estudiante;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        var emf = Persistence.createEntityManagerFactory("jpa-hibernate-h2-estudiantes");
+        /*
+               var emf = Persistence.createEntityManagerFactory("jpa-hibernate-h2-estudiantes");
         EntityManager entityManager = emf.createEntityManager();
 
         entityManager.getTransaction().begin();
@@ -19,5 +21,13 @@ public class Main {
 
         entityManager.close();
         emf.close();
+         */
+        EntityManagerFactory factory = EntityManagerUtil.getInstance().getEntityManager("jpa-hibernate-h2-estudiantes");
+        EntityManagerFactory factory2 = EntityManagerUtil.getInstance().getEntityManager("jpa-hibernate-h2-estudiantes");
+
+        if (factory==factory2){
+            System.out.println("son iguales");
+        }
+
     }
 }
