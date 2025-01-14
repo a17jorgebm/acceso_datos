@@ -1,4 +1,30 @@
 # JPA e Hibernate
+## Dependencias
+Como exemplo, usaremos base de datos h2
+```xml
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <!-- Se precisa la dependencia de Hibernate y la de la API de Jakarta Persistence -->
+    <dependency>
+        <groupId>jakarta.persistence</groupId>
+        <artifactId>jakarta.persistence-api</artifactId>
+        <version>3.1.0</version>
+    </dependency><!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+    <dependency>
+        <groupId>org.hibernate.orm</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>6.6.4.Final</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>2.3.232</version>
+    </dependency>
+</dependencies>
+```
+## Configuracion
 Para defininir la configuración y las unidades de persistencia crearemos el archivo:
 
 `resources/META-INF/persistence.xml`
@@ -40,3 +66,6 @@ Para defininir la configuración y las unidades de persistencia crearemos el arc
     </persistence-unit>
 </persistence>
 ```
+
+# Teoria
+

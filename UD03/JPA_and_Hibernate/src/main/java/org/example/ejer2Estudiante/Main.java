@@ -27,6 +27,8 @@ public class Main {
 
         if (factory==factory2){
             System.out.println("son iguales");
+        }else {
+            System.out.println("nope");
         }
 
     }

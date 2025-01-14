@@ -1,6 +1,5 @@
 package org.example.ejer2Estudiante;
 
-import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
@@ -38,9 +37,9 @@ public class EntityManagerUtil {
                                 this.entityManagerFactories.get(entityName)==null ||
                                 !this.entityManagerFactories.get(entityName).isOpen()
                 ) {
-                    try (
-                            var factory = Persistence.createEntityManagerFactory(entityName);
-                    ) {
+                    System.out.println("creo outra");
+                    try{
+                        var factory = Persistence.createEntityManagerFactory(entityName);
                         this.entityManagerFactories.put(entityName, factory);
                     }catch (Exception e){
                         throw e;
@@ -48,9 +47,6 @@ public class EntityManagerUtil {
                 }
             }
         }
-
-
-
         return this.entityManagerFactories.get(entityName);
     }
 }
