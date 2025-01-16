@@ -2,7 +2,7 @@
 package com.pepinho.ad.biblioteca;
 
 import com.pepinho.ad.biblioteca.model.*;
-import com.pepinho.programacion.biblioteca.model.*;
+import com.pepinho.ad.biblioteca.model.*;
 
 
 import java.io.IOException;

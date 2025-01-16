@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Entity
 public class Estudiante implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEstudiante;
     private String nombre;
     private String apellidos;

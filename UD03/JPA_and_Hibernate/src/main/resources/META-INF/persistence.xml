@@ -14,7 +14,8 @@
             <property name="jakarta.persistence.jdbc.password" value="" />
             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
 
-            <property name="hibernate.dialect"    value="org.hibernate.dialect.H2Dialect" />
+            <!-- comento esto por esto: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) -->
+            <!-- <property name="hibernate.dialect"    value="org.hibernate.dialect.H2Dialect" /> -->
             <property name="hibernate.show_sql"   value="true" />
             <property name="hibernate.format_sql" value="true" />
         </properties>
