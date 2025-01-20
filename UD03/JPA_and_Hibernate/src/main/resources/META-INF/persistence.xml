@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="jpa-hibernate-h2-estudiantes">
+        <class>org.example.ejer2Estudiante.Estudiante</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:h2:./db/dbProba" />
+            <property name="jakarta.persistence.jdbc.user"   value="" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
+
+            <!-- comento esto por esto: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) -->
+            <!-- <property name="hibernate.dialect"    value="org.hibernate.dialect.H2Dialect" /> -->
+            <property name="hibernate.show_sql"   value="true" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="jpa-hibernate-h2-blobs">
+        <class>org.example.ejerBLOBsAndEnums.Document</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:h2:./db/h2/dbProbaBlob" />
+            <property name="jakarta.persistence.jdbc.user"   value="" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
+
+            <!-- comento esto por esto: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) -->
+            <!-- <property name="hibernate.dialect"    value="org.hibernate.dialect.H2Dialect" /> -->
+            <property name="hibernate.show_sql"   value="true" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="jpa-hibernate-sqlite-blobs">
+        <class>org.example.ejerBLOBsAndEnums.Document</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:sqlite:./db/sqlite/dbProbaBlob" />
+            <property name="jakarta.persistence.jdbc.user"   value="" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
+
+            <!-- comento esto por esto: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) -->
+            <property name="hibernate.dialect"    value="org.hibernate.community.dialect.SQLiteDialect"/>
+            <property name="hibernate.show_sql"   value="true" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>
