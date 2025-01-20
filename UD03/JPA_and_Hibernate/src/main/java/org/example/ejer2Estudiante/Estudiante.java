@@ -1,9 +1,6 @@
 package org.example.ejer2Estudiante;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -17,6 +14,25 @@ public class Estudiante implements Serializable {
     private String apellidos;
     private LocalDate fechaNacimiento;
     private String direccion;
+
+    @Transient
+    private String parte1_descripcion;
+    @Transient
+    private String parte2_descripcion;
+
+    @Access(AccessType.PROPERTY)
+    @Column(name = "descripcion_completa")
+    public String getDescripcionCompleta(){
+        return parte1_descripcion + ";;" + parte2_descripcion;
+    }
+
+    @Access(AccessType.PROPERTY)
+    @Column(name = "descripcion_completa")
+    public void setDescripcionCompleta(String descripcionCompleta){
+        String[] descripcions = descripcionCompleta.split(";;");
+        parte1_descripcion = descripcions[0];
+        parte2_descripcion = descripcions[1];
+    }
 
     public Estudiante() {}
 
