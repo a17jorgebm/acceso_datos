@@ -1,0 +1,121 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Vehicles",
+      "question": "Which of the following countries has officially banned the civilian use of dash cams in cars?",
+      "correct_answer": "Austria",
+      "incorrect_answers": [
+        "United States",
+        "Czechia",
+        "South Korea"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Vehicles",
+      "question": "What country is the Hussarya supercar, made by the car manufacturer &quot;Arrinera&quot;, assembled in?",
+      "correct_answer": "Poland",
+      "incorrect_answers": [
+        "China",
+        "Sweden",
+        "Italy"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science &amp; Nature",
+      "question": "About how old is Earth?",
+      "correct_answer": "4.5 Billion Years",
+      "incorrect_answers": [
+        "3.5 Billion Years",
+        "2.5 Billion Years",
+        "5.5 Billion Years"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "Which of these levels does NOT appear in the console/PC versions of the game &quot;Sonic Generations&quot;?",
+      "correct_answer": "Mushroom Hill",
+      "incorrect_answers": [
+        "City Escape",
+        "Planet Wisp",
+        "Sky Sanctuary"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Undertale&quot;, the main character of the game is Sans.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "The &#039;In the Flesh&#039; tour was used in support of what Pink Floyd album?",
+      "correct_answer": "Animals",
+      "incorrect_answers": [
+        "The Wall",
+        "Wish You Were Here",
+        "The Final Cut"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "When did O, Canada officially become the national anthem?",
+      "correct_answer": "1980",
+      "incorrect_answers": [
+        "1950",
+        "1920",
+        "1880"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Film",
+      "question": "There aren&#039;t any live-action clones in &quot;Star Wars: Episode III - Revenge of the Sith&quot;.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "How many countries does Mexico border?",
+      "correct_answer": "3",
+      "incorrect_answers": [
+        "2",
+        "4",
+        "1"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Television",
+      "question": "The &quot;Psycho&quot; series of videos on YouTube was created by which of the following?",
+      "correct_answer": "RiDGiD STUDiOS",
+      "incorrect_answers": [
+        "Dan Bell",
+        "Billy Familia",
+        "VeganGainz"
+      ]
+    }
+  ]
+}

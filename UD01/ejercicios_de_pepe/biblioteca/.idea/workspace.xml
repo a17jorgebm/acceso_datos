@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84eb144e-7216-42bd-a0be-f86439136da8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ExamenConTypeAdapter/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ExamenConTypeAdapter/ExamenAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ExamenConTypeAdapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer1Examen/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/ExamenDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/ExamenSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/ListaExamenDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/ListaExamenSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/LocalDateTimeDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/LocalDateTimeSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/ejer2Examen/ejer2ExamenConArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/BrowserGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/GameInstanceCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/GameTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/Plataforma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/AppTrivial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/Categoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/Dificultad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/GsonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/Opcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/Pregunta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/PreguntaMultiple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/PreguntaVerdaderoFalso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/TipoPregunta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/adaptadores/PreguntaTypeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/acceso_datos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/ImpDaoPartido/FactoryImpDaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/ImpDaoPartido/ImpDaoPartidoFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/ImpDaoPartido/ImpDaoPartidoJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/daos/DaoGenerico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/ProbaFactoryConSubInterfaces/src/main/java/org/example/daos/DaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.idea/remote-targets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/baloncesto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/database/clasificacions.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/database/equipos.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/database/equipos_clasificacion.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/database/partidos.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/AppendObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/Clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/Equipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/EquipoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/Equipo_clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/Funcions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/InterfazGrafica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/Partido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/dao_implementations/ImpDaoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/dao_implementations/ImpDaoEquipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/dao_implementations/ImpDaoEquipoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/dao_implementations/ImpDaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/daos/DaoEquipoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/daos/DaoGenerico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/daos/DaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_baloncesto/src/main/java/org/example/boletin/gestionBaloncesto/que tou facendo e preguntas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/remote-targets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/accesoADatos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/database/clasificacions.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/ClaseScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/Flujos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/LecturaUrl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/LecuraTecladoManual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/PruebasApuntes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer1/EjecutarJs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer1/codigoJs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer1/ejer1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer2/JsonPExemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer3/Examen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin03_json/ejer3/ejer3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletinNIO/Ejer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletinNIO/Ejer3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/ejer1/ApartadoA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/ejer1/ApartadoB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/ejer1/ApartadoC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/ejer2/Ejer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/ejer2/EstatisticaFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/AppendObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Equipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/EquipoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Equipo_clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Funcions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/Partido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/dao_implementations/ImpDaoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/dao_implementations/ImpDaoEquipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/dao_implementations/ImpDaoEquipoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/dao_implementations/ImpDaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/daos/DaoEquipoClasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/daos/DaoGenerico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/daos/DaoPartido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncesto/por onde vou e dudas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/boletin_ficheiros/gestionBaloncestoNormal/DaoGenerico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/serializacion_objetos_ficheiros/AppendObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/serializacion_objetos_ficheiros/ColeccionPersonas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/serializacion_objetos_ficheiros/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/serializacion_objetos_ficheiros/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_ficheiros/tema1_ejers_ficheiros_e_jsonb/src/main/java/org/example/serializacion_objetos_ficheiros/SerializacionMultiple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/Clasificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/ClasificacionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/ClasificacionJsonDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/Equipo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/baloncestoPochoJson/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/accesoADatos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/jsonApi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/preguntas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/GsonDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerGsonExamen/Examen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerGsonExamen/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/AppPeticion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/Concello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/Prediccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/PrediccionDia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/Provincia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/VariableFranxa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/VariableMeteo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/ConcelloDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/ConcellosAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/ConcellosProvinciaAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/PrediccionDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/PrediccionDiaDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/adapters/PrediccionSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/api.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/concellos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejerMeteoGalicia/provincias_concello.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer1/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/Direccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/adaptadores/DireccionJsonDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/adaptadores/DireccionJsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/adaptadores/PersonaJsonDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/JsonDeserializerAndSerializer/ejer2/adaptadores/PersonaJsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/examen/Examen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/examen/LocalDateTimeTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/examen/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/ejersTypeAdapter/examen/accesoADatos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/gsonConEnums/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/gsonConEnums/Plataforma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/gsonConEnums/Videoxogo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/proba1/Proba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/AppTrivial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/Categoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/Dificultad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/Opcion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/Pregunta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/PreguntaMultiple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/PreguntaVerdaderoFalso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/TipoPregunta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/onde vou" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/ejercicios_gson/src/main/java/org/example/trivialJson/typeAdapters/DificultadTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_gson/tema1_gson.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/CodigoPostal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/Lugar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/VentaCodigoPostal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/WindowStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/adaptadores/DeserializerCodigoPostal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-postgres/src/main/java/org/example/adaptadores/DeserializerLugar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/databases/ejemplo_h2.V3.db.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/databases/ejemplo_h2.V3.db.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/databases/zoo_ejemplo.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/db-sqlite/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/E:/98 - Bases de datos/h2/bd/filosofosv2.3.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/E:/98 - Bases de datos/h2/bd/filosofosv2.3.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/db/biblioteca2.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/db/biblioteca2.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/db/filosofosv2.3.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/db/filosofosv2.3.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/biblioteca2.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/biblioteca2.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9780241984758.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9780307959474.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9781035003754.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788408238218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788418067952.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788424159535.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788433960023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788433977373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788433979551.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788439741114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788478884452.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788483468685.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788497592208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788497599443.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/9788499088150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/bookscovers/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/controller/IBookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/controller/tarefas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/modelo/BibliotecaConnectionMaganer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/modelo/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/modelo/Contido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/modelo/tarefas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/vista/BookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/biblioteca/vista/IBookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/boletin1/Boletín 02.01. Java JDBC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/ejer1/BibliotecaConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/ejer1/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/ejer1/BookDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/ejer1/DaoGenerico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/ejer1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/filosofos/dao/FilosofosViewDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/pdfsTema2/Ejer1_Primeira_Consulta/empleados.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_bd/h2/src/main/java/org/example/pdfsTema2/Ejer1_Primeira_Consulta/empleados.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/Biblioteca.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/1/7/175e235026d3eddae5106b1d59fd402724b3c022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/4/2/425ac21cd63fcd5619fd54263a60bb278f950d6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/4/3/438ae4badbf00ebafe9c7834632766707b51c7c9" beforeDir="false" afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/freeToGame/json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/5/3/531bbb96dd916ad86ee6d93d2c6c24d2acb2cc74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/5/7/57ea9f97e945a47e05e1c8c2dd6b8b58c1fbf5fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/7/2/72a045c06dec936b9b7868d6d9482d76e910c033" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/8/3/832cad6717dc9307d18561220799849e8324e496" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/8/6/86faba352b8750665d4a2ef0274b75b58fb6a9e7" beforeDir="false" afterPath="$PROJECT_DIR$/../../practicar_examen/Gson/src/main/java/org/example/trivial/respuesta_api.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/8/a/8a5096be4182b02c88fc0eb04cce30643858038b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/9/3/93e341409cdf3d107293c0e188af04cbce359f1e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/b/5/b5f6433c81e8562cf045aea216c71bfa1c468905" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/c/d/cd87ffa6a7996bedce1b5e04a0f7c54da1689a8d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/1/7/175e235026d3eddae5106b1d59fd402724b3c022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/4/2/425ac21cd63fcd5619fd54263a60bb278f950d6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/4/3/438ae4badbf00ebafe9c7834632766707b51c7c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/5/3/531bbb96dd916ad86ee6d93d2c6c24d2acb2cc74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/5/7/57ea9f97e945a47e05e1c8c2dd6b8b58c1fbf5fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/7/2/72a045c06dec936b9b7868d6d9482d76e910c033" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/8/3/832cad6717dc9307d18561220799849e8324e496" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/8/6/86faba352b8750665d4a2ef0274b75b58fb6a9e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/8/a/8a5096be4182b02c88fc0eb04cce30643858038b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/9/3/93e341409cdf3d107293c0e188af04cbce359f1e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/b/5/b5f6433c81e8562cf045aea216c71bfa1c468905" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/c/d/cd87ffa6a7996bedce1b5e04a0f7c54da1689a8d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/Boletin10.03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/appbiblioteca.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/AppBiblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/AppInsertBatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/AppInsertContido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/controller/IBookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/BibliotecaConnectionMaganer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/BookDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/Contido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/ContidoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/model/GSonDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/view/BookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/view/BookViewCutre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/java/com/pepinho/programacion/biblioteca/view/IBookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/Boletin10.03-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/AppBiblioteca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/AppInsertBatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/AppInsertContido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/controller/IBookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/BibliotecaConnectionMaganer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/BookDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/Contido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/ContidoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/model/GSonDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/BookView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/BookView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/BookView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/BookView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/BookViewCutre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/classes/com/pepinho/programacion/biblioteca/view/IBookView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solucion/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteca2.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biblioteca2.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9780241984758.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9780307959474.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9781035003754.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788408238218.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788418067952.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788424159535.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788433960023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788433977373.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788433979551.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788439741114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788478884452.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788483468685.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788497592208.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788497599443.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/9788499088150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscovers/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/IBookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/tarefas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo/BibliotecaConnectionMaganer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo/Contido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo/tarefas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/BookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/IBookView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/FilosofosViewDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/com/pepinho/programacion/filosofos/dao/FilosofosViewDAO$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/com/pepinho/programacion/filosofos/dao/FilosofosViewDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/filosofosv2.3.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/filosofosv2.3.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/filosofosv2.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filosofos/filosofosv2.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/src/main/java/org/example/singleton/InstanciacionSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/DesingPatterns/src/main/java/org/example/singleton/Singleton1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/PatronsDiseño.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/context_in_java.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apuntes_extra_java/dependencias.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../db-sqlite/databases/ejemplo_h2.V3.db.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../db-sqlite/databases/ejemplo_h2.V3.db.trace.db" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2q8oI9DzSSUeGcqC7D8JiP9UeKa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jorge/Documents/dam/acceso_datos/UD01/ejercicios_de_pepe/biblioteca",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84eb144e-7216-42bd-a0be-f86439136da8" name="Changes" comment="" />
+      <created>1734053480312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734053480312</updated>
+      <workItem from="1734053481358" duration="1732000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
