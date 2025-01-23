@@ -22,6 +22,10 @@ public class Main {
         entityManager.persist(persona);
         entityManager.getTransaction().commit();
 
+        entityManager.refresh(persona);
+        Persona p2 = entityManager.find(Persona.class,persona.getIdPersona());
+        System.out.println(p2);
+
         //faltame recuperar a persona
         //Persona persona1 = entityManager.find(Persona.class, )
 

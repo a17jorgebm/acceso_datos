@@ -3,12 +3,13 @@ package org.example.ejer05_3_Persona;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 
 @Entity
 @Access(AccessType.FIELD)
 public class Persona {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Long idPersona;
 
     @Transient
@@ -26,7 +27,23 @@ public class Persona {
     @Basic(fetch = FetchType.LAZY)
     private byte[] foto;
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "idPersona=" + idPersona +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", fechaNacimientoEnteiro=" + fechaNacimientoEnteiro +
+                ", sexo=" + sexo +
+                ", estadoCivil=" + estadoCivil +
+                ", foto=" + Arrays.toString(foto) +
+                '}';
+    }
+
     public Persona() {
+
+
     }
 
     @PrePersist
