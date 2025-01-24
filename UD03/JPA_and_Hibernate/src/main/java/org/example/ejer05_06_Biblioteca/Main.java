@@ -1,5 +1,11 @@
 package org.example.ejer05_06_Biblioteca;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import org.example.EntityManagerUtil;
+
+import java.util.Calendar;
+
 /***
  * Amplía el ejercicio de la biblioteca para que la entidad Book tenga un identificador generado automáticamente por medio de una tabla.
  *
@@ -40,8 +46,36 @@ package org.example.ejer05_06_Biblioteca;
  */
 public class Main {
     public static void main(String[] args) {
-        String isbn="1234567890123";
-        String isbn9=isbn.substring(3,12);
-        System.out.println(isbn9.length());
+        EntityManagerFactory factory = EntityManagerUtil.getInstance().getEntityManager("dbEjer05_06_book");
+        EntityManager entityManager = factory.createEntityManager();
+
+        entityManager.getTransaction().begin();
+
+        Book book = new Book();
+
+        // Configurar las propiedades del objeto
+        book.setIsbn("9781234567897"); // Código ISBN (debe ser de 13 dígitos)
+        book.setTitle("Aprendiendo Java");
+        book.setAuthor("Juan Pérez");
+        book.setAno(2023);
+        book.setAvailable(true);
+
+        // Portada (imagen representada como un arreglo de bytes)
+        byte[] portada = {1, 2, 3, 4, 5}; // Simulación de datos binarios
+        book.setPortada(portada);
+
+        // Configurar la categoría (debes asegurarte de que la clase `Categoria` esté definida)
+        Categoria categoria = Categoria.NOVELA;
+        book.setCategoria(categoria);
+
+        // Fecha de publicación
+        Calendar fechaPublicacion = Calendar.getInstance();
+        fechaPublicacion.set(2023, Calendar.JANUARY, 10); // Fecha: 10 de enero de 2023
+        book.setFechaPublicacion(fechaPublicacion);
+
+        entityManager.persist(book);
+        entityManager.getTransaction().commit();
+
+
     }
 }
