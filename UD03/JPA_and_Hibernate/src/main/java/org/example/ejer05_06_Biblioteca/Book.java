@@ -44,9 +44,14 @@ public class Book {
     public Book() {
     }
 
-    // na da fallo pero simplemente crear un metodo que ejecute aos dous estes
+    //solo se pode ter un metodo con estas anotacions
     @PrePersist
     @PostLoad
+    private void updateFields(){
+        updateDiasDesdePubliacion();
+        updateIsbTenDigitsVersion();
+    }
+
     private void updateDiasDesdePubliacion(){
         LocalDate fechaPublicacionLD= this.fechaPublicacion
                 .toInstant()
@@ -55,8 +60,6 @@ public class Book {
         diasDesdePublicacion = ChronoUnit.DAYS.between(fechaPublicacionLD,LocalDate.now());
     }
 
-    @PrePersist
-    @PostLoad
     private void updateIsbTenDigitsVersion(){
         String isbn9=isbn.substring(3,12);
         System.out.println(isbn9);
