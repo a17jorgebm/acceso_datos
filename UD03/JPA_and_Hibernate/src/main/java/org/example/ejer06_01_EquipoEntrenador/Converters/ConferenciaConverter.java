@@ -1,7 +1,8 @@
-package org.example.ejer06_01_EquipoEntrenador;
+package org.example.ejer06_01_EquipoEntrenador.Converters;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
+import org.example.ejer06_01_EquipoEntrenador.Enums.Conferencia;
 
 @Converter
 public class ConferenciaConverter implements AttributeConverter<Conferencia, String> {

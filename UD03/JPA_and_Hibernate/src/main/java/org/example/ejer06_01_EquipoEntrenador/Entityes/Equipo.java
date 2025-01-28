@@ -1,6 +1,10 @@
-package org.example.ejer06_01_EquipoEntrenador;
+package org.example.ejer06_01_EquipoEntrenador.Entityes;
 
 import jakarta.persistence.*;
+import org.example.ejer06_01_EquipoEntrenador.Enums.Conferencia;
+import org.example.ejer06_01_EquipoEntrenador.Converters.ConferenciaConverter;
+import org.example.ejer06_01_EquipoEntrenador.Enums.Division;
+import org.example.ejer06_01_EquipoEntrenador.Converters.DivisionConverter;
 
 @Entity
 public class Equipo {

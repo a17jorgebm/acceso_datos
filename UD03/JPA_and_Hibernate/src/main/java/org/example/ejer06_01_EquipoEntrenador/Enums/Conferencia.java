@@ -1,6 +1,4 @@
-package org.example.ejer06_01_EquipoEntrenador;
-
-import java.util.ArrayList;
+package org.example.ejer06_01_EquipoEntrenador.Enums;
 
 public enum Conferencia {
     ESTE("EAST"),OESTE("WEST");

@@ -94,7 +94,8 @@
     </persistence-unit>
 
     <persistence-unit name="dbEjer06_01_equipo_entrenador">
-        <class>org.example.ejer05_06_Biblioteca.Book</class>
+        <class>org.example.ejer06_01_EquipoEntrenador.Entityes.Equipo</class>
+        <class>org.example.ejer06_01_EquipoEntrenador.Entityes.Entrenador</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>

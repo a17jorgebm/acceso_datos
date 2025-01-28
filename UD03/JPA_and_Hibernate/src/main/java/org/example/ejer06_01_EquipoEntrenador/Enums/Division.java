@@ -1,4 +1,4 @@
-package org.example.ejer06_01_EquipoEntrenador;
+package org.example.ejer06_01_EquipoEntrenador.Enums;
 
 public enum Division {
     ATLANTICO("ATLANTIC"),

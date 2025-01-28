@@ -10,9 +10,7 @@ public class JpaNbaManager {
     private static JpaNbaManager instance;
     private EntityManagerFactory entityManagerFactory;
 
-    private JpaNbaManager(){
-
-    }
+    private JpaNbaManager(){}
 
     public static JpaNbaManager getInstance(){
         if (instance == null)
