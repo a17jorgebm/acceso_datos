@@ -57,6 +57,16 @@
             <artifactId>hibernate-community-dialects</artifactId>
             <version>6.6.5.Final</version>
         </dependency>
+
+
+        <!-- tests -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.11.4</version>
+        </dependency>
+
     </dependencies>
 
 

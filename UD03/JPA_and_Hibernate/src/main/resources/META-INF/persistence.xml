@@ -56,4 +56,23 @@
             <property name="hibernate.format_sql" value="true" />
         </properties>
     </persistence-unit>
+
+    <!-- ejercicio básico Usuario -->
+    <persistence-unit name="ejer-usuario-h2">
+        <class>org.example.ejerBasicoUsuario.Usuario</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:./db/h2/dbUsuario;DATABASE_TO_UPPER=FALSE"/>
+            <property name="jakarta.persistence.jdbc.user" value=""/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+
+            <!-- non llo indicamos para h2 -->
+            <property name="hibernate.dialect" value=""/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
 </persistence>
