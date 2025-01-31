@@ -69,3 +69,34 @@ Para defininir la configuración y las unidades de persistencia crearemos el arc
 
 # Teoria
 
+## Tipos de generación de id dunha entidad
+### Table
+Indicar que esto é compatible con todas as bd, polo que é a estratexia mais flexible de todas
+
+Vai crear unha tabla a parte para gardar os ids, se solo se lle indica a strategy sen establececer parametros de `@TableGenerator` todas as entidades compartirán a mesma tabla de ids 
+```java
+@Entity
+public class Persona {
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
+    private Long idPersona;
+```
+
+Podemos definir os atributos que vai ter a taboa usando `@TableGenerator`
+```java
+@TableGenerator(
+        name = "generadorEmpleado",
+        table = "ID_GEN",
+        pkColumnName = "GEN_KEY",
+        valueColumnName = "GEN_VALUE",
+        pkColumnValue = "EMP_ID",
+        allocationSize = 1)
+@Id
+@GeneratedValue(strategy = TABLE, generator = "generadorEmpleado")
+int id;
+```
+
+### Sequence
+É algo menos compatible que table, pero é o método mais eficiente.
+
+
