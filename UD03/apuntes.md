@@ -100,3 +100,17 @@ int id;
 É algo menos compatible que table, pero é o método mais eficiente.
 
 
+### Mapeo do id en entidades debiles
+Se queremos que unha entidad debil teña o mesmo id que a entidade fuerte da relacion, usaremos mappedBy. 
+
+Por ejemplo, Empleado será a entidad force e Dirección a débil:
+
+```java
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Empleado {
+    @Id 
+}
+```
