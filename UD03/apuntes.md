@@ -114,3 +114,8 @@ public class Empleado {
     @Id 
 }
 ```
+
+
+
+# Spring boot
+Non necesita un persistence.xml
