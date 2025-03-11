@@ -1,0 +1,10 @@
+
+R
+java:S1141'"5Extract this nested try block into a separate method.(°—†8ãúú’ş1
+L	java:S106"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8ùƒû’ş1
+G	java:S106%"+Replace this use of System.out by a logger.(‚‘‰Š8şƒû’ş1
+L	java:S1061"+Replace this use of System.out by a logger.(‹Ê–ùÿÿÿÿ8…„û’ş1
+G	java:S1063"+Replace this use of System.out by a logger.(Àî®Ã8†„û’ş1
+X	java:S1254"<This block of commented-out lines of code should be removed.(¿ÙÛ»8‡„û’ş1
+L	java:S106:"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8ˆ„û’ş1
+L	java:S106A"+Replace this use of System.err by a logger.(îÚÜûÿÿÿÿ8‰„û’ş1

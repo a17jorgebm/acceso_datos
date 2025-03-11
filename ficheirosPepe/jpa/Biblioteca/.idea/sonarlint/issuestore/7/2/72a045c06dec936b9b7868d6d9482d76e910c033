@@ -1,0 +1,8 @@
+
+L	java:S106"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8´…û’ş1
+L	java:S106"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8¸…û’ş1
+C
+java:S1168!"&Return an empty array instead of null.(¥¹ï8º…û’ş1
+X	java:S1252"<This block of commented-out lines of code should be removed.(¦˜8À…û’ş1
+L	java:S106H"+Replace this use of System.out by a logger.(ãå¹áøÿÿÿÿ8É…û’ş1
+L	java:S106M"+Replace this use of System.err by a logger.(îÚÜûÿÿÿÿ8Ê…û’ş1

@@ -1,0 +1,13 @@
+
+W
+java:S11412"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ý‡û’þ1
+»
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ø—Ç‘ùÿÿÿÿ8–ˆû’þ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÑšÓ¡þÿÿÿÿ8œˆû’þ1
+V
+java:S2168$"9Remove this dangerous instance of double-checked locking.(Š¢Áž8 ˆû’þ1
+O
+java:S49253"-Remove this "Class.forName()", it is useless.(ŽÝˆùÿÿÿÿ8¦ˆû’þ1
+L	java:S1066"+Replace this use of System.err by a logger.(¦‰Èõþÿÿÿÿ8¨ˆû’þ1
+G	java:S1068"+Replace this use of System.err by a logger.(ƒàÖ»8©ˆû’þ1
+G	java:S106?"+Replace this use of System.err by a logger.(ƒàÖ»8«ˆû’þ1

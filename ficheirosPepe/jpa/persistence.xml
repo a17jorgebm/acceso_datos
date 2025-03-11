@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="jpa-hibernate-h2">
+        <description>
+            Ejemplo de unidad de persistencia para Jakarta Persistence
+        </description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!--                <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+<!--        <class>com.pepinho.ad.jpa.entities.Pelicula</class>-->
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="jakarta.persistence.jdbc.url"    value="jdbc:h2:E:\docenciajpa;DATABASE_TO_UPPER=FALSE;FILE_LOCK=NO;DB_CLOSE_DELAY=-1" />
+            <property name="jakarta.persistence.jdbc.user"   value="" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+
+            <!-- Esta propiedad genera el esquema de la base de datos:
+             create: Crea el esquema de la base de datos.
+                drop-and-create: Borra el esquema de la base de datos y lo vuelve a crear.
+                none: No hace nada.
+                drop: Borra el esquema de la base de datos al cerrar la conexión.
+
+             -->
+            <property name="jakarta.persistence.schema-generation.database.action" value="create" />
+
+            <property name="hibernate.dialect"    value="org.hibernate.dialect.H2Dialect" />
+
+            <!-- Muestra por pantalla las sentencias SQL -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.highlight_sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,1257 @@
+[
+  {
+    "id": 15001,
+    "nombre": "Abegondo"
+  },
+  {
+    "id": 15002,
+    "nombre": "Ames"
+  },
+  {
+    "id": 15003,
+    "nombre": "Aranga"
+  },
+  {
+    "id": 15004,
+    "nombre": "Ares"
+  },
+  {
+    "id": 15005,
+    "nombre": "Arteixo"
+  },
+  {
+    "id": 15006,
+    "nombre": "Arzúa"
+  },
+  {
+    "id": 15007,
+    "nombre": "A Baña"
+  },
+  {
+    "id": 15008,
+    "nombre": "Bergondo"
+  },
+  {
+    "id": 15009,
+    "nombre": "Betanzos"
+  },
+  {
+    "id": 15010,
+    "nombre": "Boimorto"
+  },
+  {
+    "id": 15011,
+    "nombre": "Boiro"
+  },
+  {
+    "id": 15012,
+    "nombre": "Boqueixón"
+  },
+  {
+    "id": 15013,
+    "nombre": "Brión"
+  },
+  {
+    "id": 15014,
+    "nombre": "Cabana de Bergantiños"
+  },
+  {
+    "id": 15015,
+    "nombre": "Cabanas"
+  },
+  {
+    "id": 15016,
+    "nombre": "Camariñas"
+  },
+  {
+    "id": 15017,
+    "nombre": "Cambre"
+  },
+  {
+    "id": 15018,
+    "nombre": "A Capela"
+  },
+  {
+    "id": 15019,
+    "nombre": "Carballo"
+  },
+  {
+    "id": 15901,
+    "nombre": "Cariño"
+  },
+  {
+    "id": 15020,
+    "nombre": "Carnota"
+  },
+  {
+    "id": 15021,
+    "nombre": "Carral"
+  },
+  {
+    "id": 15022,
+    "nombre": "Cedeira"
+  },
+  {
+    "id": 15023,
+    "nombre": "Cee"
+  },
+  {
+    "id": 15024,
+    "nombre": "Cerceda"
+  },
+  {
+    "id": 15025,
+    "nombre": "Cerdido"
+  },
+  {
+    "id": 15027,
+    "nombre": "Coirós"
+  },
+  {
+    "id": 15028,
+    "nombre": "Corcubión"
+  },
+  {
+    "id": 15029,
+    "nombre": "Coristanco"
+  },
+  {
+    "id": 15030,
+    "nombre": "A Coruña"
+  },
+  {
+    "id": 15031,
+    "nombre": "Culleredo"
+  },
+  {
+    "id": 15032,
+    "nombre": "Curtis"
+  },
+  {
+    "id": 15033,
+    "nombre": "Dodro"
+  },
+  {
+    "id": 15034,
+    "nombre": "Dumbría"
+  },
+  {
+    "id": 15035,
+    "nombre": "Fene"
+  },
+  {
+    "id": 15036,
+    "nombre": "Ferrol"
+  },
+  {
+    "id": 15037,
+    "nombre": "Fisterra"
+  },
+  {
+    "id": 15038,
+    "nombre": "Frades"
+  },
+  {
+    "id": 15039,
+    "nombre": "Irixoa"
+  },
+  {
+    "id": 15041,
+    "nombre": "A Laracha"
+  },
+  {
+    "id": 15040,
+    "nombre": "Laxe"
+  },
+  {
+    "id": 15042,
+    "nombre": "Lousame"
+  },
+  {
+    "id": 15043,
+    "nombre": "Malpica de Bergantiños"
+  },
+  {
+    "id": 15044,
+    "nombre": "Mañón"
+  },
+  {
+    "id": 15045,
+    "nombre": "Mazaricos"
+  },
+  {
+    "id": 15046,
+    "nombre": "Melide"
+  },
+  {
+    "id": 15047,
+    "nombre": "Mesía"
+  },
+  {
+    "id": 15048,
+    "nombre": "Miño"
+  },
+  {
+    "id": 15049,
+    "nombre": "Moeche"
+  },
+  {
+    "id": 15050,
+    "nombre": "Monfero"
+  },
+  {
+    "id": 15051,
+    "nombre": "Mugardos"
+  },
+  {
+    "id": 15053,
+    "nombre": "Muros"
+  },
+  {
+    "id": 15052,
+    "nombre": "Muxía"
+  },
+  {
+    "id": 15054,
+    "nombre": "Narón"
+  },
+  {
+    "id": 15055,
+    "nombre": "Neda"
+  },
+  {
+    "id": 15056,
+    "nombre": "Negreira"
+  },
+  {
+    "id": 15057,
+    "nombre": "Noia"
+  },
+  {
+    "id": 15058,
+    "nombre": "Oleiros"
+  },
+  {
+    "id": 15059,
+    "nombre": "Ordes"
+  },
+  {
+    "id": 15060,
+    "nombre": "Oroso"
+  },
+  {
+    "id": 15061,
+    "nombre": "Ortigueira"
+  },
+  {
+    "id": 15062,
+    "nombre": "Outes"
+  },
+  {
+    "id": 15902,
+    "nombre": "Oza-Cesuras"
+  },
+  {
+    "id": 15064,
+    "nombre": "Paderne"
+  },
+  {
+    "id": 15065,
+    "nombre": "Padrón"
+  },
+  {
+    "id": 15066,
+    "nombre": "O Pino"
+  },
+  {
+    "id": 15067,
+    "nombre": "Pobra do Caramiñal"
+  },
+  {
+    "id": 15068,
+    "nombre": "Ponteceso"
+  },
+  {
+    "id": 15069,
+    "nombre": "Pontedeume"
+  },
+  {
+    "id": 15070,
+    "nombre": "As Pontes de García Rodríguez"
+  },
+  {
+    "id": 15071,
+    "nombre": "Porto do Son"
+  },
+  {
+    "id": 15072,
+    "nombre": "Rianxo"
+  },
+  {
+    "id": 15073,
+    "nombre": "Ribeira"
+  },
+  {
+    "id": 15074,
+    "nombre": "Rois"
+  },
+  {
+    "id": 15075,
+    "nombre": "Sada"
+  },
+  {
+    "id": 15076,
+    "nombre": "San Sadurniño"
+  },
+  {
+    "id": 15077,
+    "nombre": "Santa Comba"
+  },
+  {
+    "id": 15078,
+    "nombre": "Santiago de Compostela"
+  },
+  {
+    "id": 15079,
+    "nombre": "Santiso"
+  },
+  {
+    "id": 15080,
+    "nombre": "Sobrado"
+  },
+  {
+    "id": 15081,
+    "nombre": "As Somozas"
+  },
+  {
+    "id": 15082,
+    "nombre": "Teo"
+  },
+  {
+    "id": 15083,
+    "nombre": "Toques"
+  },
+  {
+    "id": 15084,
+    "nombre": "Tordoia"
+  },
+  {
+    "id": 15085,
+    "nombre": "Touro"
+  },
+  {
+    "id": 15086,
+    "nombre": "Trazo"
+  },
+  {
+    "id": 15088,
+    "nombre": "Val do Dubra"
+  },
+  {
+    "id": 15087,
+    "nombre": "Valdoviño"
+  },
+  {
+    "id": 15089,
+    "nombre": "Vedra"
+  },
+  {
+    "id": 15091,
+    "nombre": "Vilarmaior"
+  },
+  {
+    "id": 15090,
+    "nombre": "Vilasantar"
+  },
+  {
+    "id": 15092,
+    "nombre": "Vimianzo"
+  },
+  {
+    "id": 15093,
+    "nombre": "Zas"
+  },
+  {
+    "id": 27001,
+    "nombre": "Abadín"
+  },
+  {
+    "id": 27002,
+    "nombre": "Alfoz"
+  },
+  {
+    "id": 27003,
+    "nombre": "Antas de Ulla"
+  },
+  {
+    "id": 27004,
+    "nombre": "Baleira"
+  },
+  {
+    "id": 27901,
+    "nombre": "Baralla"
+  },
+  {
+    "id": 27005,
+    "nombre": "Barreiros"
+  },
+  {
+    "id": 27006,
+    "nombre": "Becerreá"
+  },
+  {
+    "id": 27007,
+    "nombre": "Begonte"
+  },
+  {
+    "id": 27008,
+    "nombre": "Bóveda"
+  },
+  {
+    "id": 27902,
+    "nombre": "Burela"
+  },
+  {
+    "id": 27009,
+    "nombre": "Carballedo"
+  },
+  {
+    "id": 27010,
+    "nombre": "Castro de Rei"
+  },
+  {
+    "id": 27011,
+    "nombre": "Castroverde"
+  },
+  {
+    "id": 27012,
+    "nombre": "Cervantes"
+  },
+  {
+    "id": 27013,
+    "nombre": "Cervo"
+  },
+  {
+    "id": 27016,
+    "nombre": "Chantada"
+  },
+  {
+    "id": 27014,
+    "nombre": "O Corgo"
+  },
+  {
+    "id": 27015,
+    "nombre": "Cospeito"
+  },
+  {
+    "id": 27017,
+    "nombre": "Folgoso
+
+    do
+    Courel
+    " },
+  {
+    "id": 27018,
+    "nombre": "A Fonsagrada"
+  },
+  {
+    "id": 27019,
+    "nombre": "Foz"
+  },
+  {
+    "id": 27020,
+    "nombre": "Friol"
+  },
+  {
+    "id": 27022,
+    "nombre": "Guitiriz"
+  },
+  {
+    "id": 27023,
+    "nombre": "Guntín"
+  },
+  {
+    "id": 27024,
+    "nombre": "O Incio"
+  },
+  {
+    "id": 27026,
+    "nombre": "Láncara"
+  },
+  {
+    "id": 27027,
+    "nombre": "Lourenzá"
+  },
+  {
+    "id": 27028,
+    "nombre": "Lugo"
+  },
+  {
+    "id": 27029,
+    "nombre": "Meira"
+  },
+  {
+    "id": 27030,
+    "nombre": "Mondoñedo"
+  },
+  {
+    "id": 27031,
+    "nombre": "Monforte de Lemos"
+  },
+  {
+    "id": 27032,
+    "nombre": "Monterroso"
+  },
+  {
+    "id": 27033,
+    "nombre": "Muras"
+  },
+  {
+    "id": 27034,
+    "nombre": "Navia de Suarna"
+  },
+  {
+    "id": 27035,
+    "nombre": "Negueira de Muñiz"
+  },
+  {
+    "id": 27037,
+    "nombre": "As Nogais"
+  },
+  {
+    "id": 27038,
+    "nombre": "Ourol"
+  },
+  {
+    "id": 27039,
+    "nombre": "Outeiro de Rei"
+  },
+  {
+    "id": 27040,
+    "nombre": "Palas de Rei"
+  },
+  {
+    "id": 27041,
+    "nombre": "Pantón"
+  },
+  {
+    "id": 27042,
+    "nombre": "Paradela"
+  },
+  {
+    "id": 27043,
+    "nombre": "O Páramo"
+  },
+  {
+    "id": 27044,
+    "nombre": "A Pastoriza"
+  },
+  {
+    "id": 27045,
+    "nombre": "Pedrafita do Cebreiro"
+  },
+  {
+    "id": 27047,
+    "nombre": "A Pobra do Brollón"
+  },
+  {
+    "id": 27046,
+    "nombre": "Pol"
+  },
+  {
+    "id": 27048,
+    "nombre": "A Pontenova"
+  },
+  {
+    "id": 27049,
+    "nombre": "Portomarín"
+  },
+  {
+    "id": 27050,
+    "nombre": "Quiroga"
+  },
+  {
+    "id": 27056,
+    "nombre": "Rábade"
+  },
+  {
+    "id": 27051,
+    "nombre": "Ribadeo"
+  },
+  {
+    "id": 27052,
+    "nombre": "Ribas de Sil"
+  },
+  {
+    "id": 27053,
+    "nombre": "Ribeira de Piquín"
+  },
+  {
+    "id": 27054,
+    "nombre": "Riotorto"
+  },
+  {
+    "id": 27055,
+    "nombre": "Samos"
+  },
+  {
+    "id": 27057,
+    "nombre": "Sarria"
+  },
+  {
+    "id": 27058,
+    "nombre": "O Saviñao"
+  },
+  {
+    "id": 27059,
+    "nombre": "Sober"
+  },
+  {
+    "id": 27060,
+    "nombre": "Taboada"
+  },
+  {
+    "id": 27061,
+    "nombre": "Trabada"
+  },
+  {
+    "id": 27062,
+    "nombre": "Triacastela"
+  },
+  {
+    "id": 27063,
+    "nombre": "O Valadouro"
+  },
+  {
+    "id": 27064,
+    "nombre": "O Vicedo"
+  },
+  {
+    "id": 27065,
+    "nombre": "Vilalba"
+  },
+  {
+    "id": 27066,
+    "nombre": "Viveiro"
+  },
+  {
+    "id": 27021,
+    "nombre": "Xermade"
+  },
+  {
+    "id": 27025,
+    "nombre": "Xove"
+  },
+  {
+    "id": 32001,
+    "nombre": "Allariz"
+  },
+  {
+    "id": 32002,
+    "nombre": "Amoeiro"
+  },
+  {
+    "id": 32003,
+    "nombre": "A Arnoia"
+  },
+  {
+    "id": 32004,
+    "nombre": "Avión"
+  },
+  {
+    "id": 32005,
+    "nombre": "Baltar"
+  },
+  {
+    "id": 32006,
+    "nombre": "Bande"
+  },
+  {
+    "id": 32007,
+    "nombre": "Baños de Molgas"
+  },
+  {
+    "id": 32008,
+    "nombre": "Barbadás"
+  },
+  {
+    "id": 32009,
+    "nombre": "O Barco de Valdeorras"
+  },
+  {
+    "id": 32010,
+    "nombre": "Beade"
+  },
+  {
+    "id": 32011,
+    "nombre": "Beariz"
+  },
+  {
+    "id": 32012,
+    "nombre": "Os Blancos"
+  },
+  {
+    "id": 32013,
+    "nombre": "Boborás"
+  },
+  {
+    "id": 32014,
+    "nombre": "A Bola"
+  },
+  {
+    "id": 32015,
+    "nombre": "O Bolo"
+  },
+  {
+    "id": 32016,
+    "nombre": "Calvos de Randín"
+  },
+  {
+    "id": 32018,
+    "nombre": "Carballeda de Avia"
+  },
+  {
+    "id": 32017,
+    "nombre": "Carballeda de Valdeorras"
+  },
+  {
+    "id": 32019,
+    "nombre": "O Carballiño"
+  },
+  {
+    "id": 32020,
+    "nombre": "Cartelle"
+  },
+  {
+    "id": 32022,
+    "nombre": "Castrelo de Miño"
+  },
+  {
+    "id": 32021,
+    "nombre": "Castrelo do Val"
+  },
+  {
+    "id": 32023,
+    "nombre": "Castro Caldelas"
+  },
+  {
+    "id": 32024,
+    "nombre": "Celanova"
+  },
+  {
+    "id": 32025,
+    "nombre": "Cenlle"
+  },
+  {
+    "id": 32029,
+    "nombre": "Chandrexa de Queixa"
+  },
+  {
+    "id": 32026,
+    "nombre": "Coles"
+  },
+  {
+    "id": 32027,
+    "nombre": "Cortegada"
+  },
+  {
+    "id": 32028,
+    "nombre": "Cualedro"
+  },
+  {
+    "id": 32030,
+    "nombre": "Entrimo"
+  },
+  {
+    "id": 32031,
+    "nombre": "Esgos"
+  },
+  {
+    "id": 32033,
+    "nombre": "Gomesende"
+  },
+  {
+    "id": 32034,
+    "nombre": "A Gudiña"
+  },
+  {
+    "id": 32035,
+    "nombre": "O Irixo"
+  },
+  {
+    "id": 32038,
+    "nombre": "Larouco"
+  },
+  {
+    "id": 32039,
+    "nombre": "Laza"
+  },
+  {
+    "id": 32040,
+    "nombre": "Leiro"
+  },
+  {
+    "id": 32041,
+    "nombre": "Lobeira"
+  },
+  {
+    "id": 32042,
+    "nombre": "Lobios"
+  },
+  {
+    "id": 32043,
+    "nombre": "Maceda"
+  },
+  {
+    "id": 32044,
+    "nombre": "Manzaneda"
+  },
+  {
+    "id": 32045,
+    "nombre": "Maside"
+  },
+  {
+    "id": 32046,
+    "nombre": "Melón"
+  },
+  {
+    "id": 32047,
+    "nombre": "A Merca"
+  },
+  {
+    "id": 32048,
+    "nombre": "A Mezquita"
+  },
+  {
+    "id": 32049,
+    "nombre": "Montederramo"
+  },
+  {
+    "id": 32050,
+    "nombre": "Monterrei"
+  },
+  {
+    "id": 32051,
+    "nombre": "Muíños"
+  },
+  {
+    "id": 32052,
+    "nombre": "Nogueira de Ramuín"
+  },
+  {
+    "id": 32053,
+    "nombre": "Oímbra"
+  },
+  {
+    "id": 32054,
+    "nombre": "Ourense"
+  },
+  {
+    "id": 32055,
+    "nombre": "Paderne de Allariz"
+  },
+  {
+    "id": 32056,
+    "nombre": "Padrenda"
+  },
+  {
+    "id": 32057,
+    "nombre": "Parada de Sil"
+  },
+  {
+    "id": 32058,
+    "nombre": "O Pereiro de Aguiar"
+  },
+  {
+    "id": 32059,
+    "nombre": "A Peroxa"
+  },
+  {
+    "id": 32060,
+    "nombre": "Petín"
+  },
+  {
+    "id": 32061,
+    "nombre": "Piñor"
+  },
+  {
+    "id": 32063,
+    "nombre": "A Pobra de Trives"
+  },
+  {
+    "id": 32064,
+    "nombre": "Pontedeva"
+  },
+  {
+    "id": 32062,
+    "nombre": "Porqueira"
+  },
+  {
+    "id": 32065,
+    "nombre": "Punxín"
+  },
+  {
+    "id": 32066,
+    "nombre": "Quintela de Leirado"
+  },
+  {
+    "id": 32067,
+    "nombre": "Rairiz de Veiga"
+  },
+  {
+    "id": 32068,
+    "nombre": "Ramirás"
+  },
+  {
+    "id": 32069,
+    "nombre": "Ribadavia"
+  },
+  {
+    "id": 32071,
+    "nombre": "Riós"
+  },
+  {
+    "id": 32072,
+    "nombre": "A Rúa"
+  },
+  {
+    "id": 32073,
+    "nombre": "Rubiá"
+  },
+  {
+    "id": 32074,
+    "nombre": "San Amaro"
+  },
+  {
+    "id": 32075,
+    "nombre": "San Cibrao das Viñas"
+  },
+  {
+    "id": 32076,
+    "nombre": "San Cristovo de Cea"
+  },
+  {
+    "id": 32070,
+    "nombre": "San Xoán de Río"
+  },
+  {
+    "id": 32077,
+    "nombre": "Sandiás"
+  },
+  {
+    "id": 32078,
+    "nombre": "Sarreaus"
+  },
+  {
+    "id": 32079,
+    "nombre": "Taboadela"
+  },
+  {
+    "id": 32080,
+    "nombre": "A Teixeira"
+  },
+  {
+    "id": 32081,
+    "nombre": "Toén"
+  },
+  {
+    "id": 32082,
+    "nombre": "Trasmiras"
+  },
+  {
+    "id": 32083,
+    "nombre": "A Veiga"
+  },
+  {
+    "id": 32084,
+    "nombre": "Verea"
+  },
+  {
+    "id": 32085,
+    "nombre": "Verín"
+  },
+  {
+    "id": 32086,
+    "nombre": "Viana do Bolo"
+  },
+  {
+    "id": 32087,
+    "nombre": "Vilamarín"
+  },
+  {
+    "id": 32088,
+    "nombre": "Vilamartín de Valdeorras"
+  },
+  {
+    "id": 32089,
+    "nombre": "Vilar de Barrio"
+  },
+  {
+    "id": 32090,
+    "nombre": "Vilar de Santos"
+  },
+  {
+    "id": 32091,
+    "nombre": "Vilardevós"
+  },
+  {
+    "id": 32092,
+    "nombre": "Vilariño de Conso"
+  },
+  {
+    "id": 32032,
+    "nombre": "Xinzo de Limia"
+  },
+  {
+    "id": 32036,
+    "nombre": "Xunqueira de Ambía"
+  },
+  {
+    "id": 32037,
+    "nombre": "Xunqueira de Espadanedo"
+  },
+  {
+    "id": 36020,
+    "nombre": "Agolada"
+  },
+  {
+    "id": 36001,
+    "nombre": "Arbo"
+  },
+  {
+    "id": 36003,
+    "nombre": "Baiona"
+  },
+  {
+    "id": 36002,
+    "nombre": "Barro"
+  },
+  {
+    "id": 36004,
+    "nombre": "Bueu"
+  },
+  {
+    "id": 36005,
+    "nombre": "Caldas de Reis"
+  },
+  {
+    "id": 36006,
+    "nombre": "Cambados"
+  },
+  {
+    "id": 36007,
+    "nombre": "Campo Lameiro"
+  },
+  {
+    "id": 36008,
+    "nombre": "Cangas"
+  },
+  {
+    "id": 36009,
+    "nombre": "A Cañiza"
+  },
+  {
+    "id": 36010,
+    "nombre": "Catoira"
+  },
+  {
+    "id": 36902,
+    "nombre": "Cerdedo-Cotobade"
+  },
+  {
+    "id": 36013,
+    "nombre": "Covelo"
+  },
+  {
+    "id": 36014,
+    "nombre": "Crecente"
+  },
+  {
+    "id": 36015,
+    "nombre": "Cuntis"
+  },
+  {
+    "id": 36016,
+    "nombre": "Dozón"
+  },
+  {
+    "id": 36017,
+    "nombre": "A Estrada"
+  },
+  {
+    "id": 36018,
+    "nombre": "Forcarei"
+  },
+  {
+    "id": 36019,
+    "nombre": "Fornelos de Montes"
+  },
+  {
+    "id": 36021,
+    "nombre": "Gondomar"
+  },
+  {
+    "id": 36022,
+    "nombre": "O Grove"
+  },
+  {
+    "id": 36023,
+    "nombre": "A Guarda"
+  },
+  {
+    "id": 36901,
+    "nombre": "A Illa de Arousa"
+  },
+  {
+    "id": 36024,
+    "nombre": "Lalín"
+  },
+  {
+    "id": 36025,
+    "nombre": "A Lama"
+  },
+  {
+    "id": 36026,
+    "nombre": "Marín"
+  },
+  {
+    "id": 36027,
+    "nombre": "Meaño"
+  },
+  {
+    "id": 36028,
+    "nombre": "Meis"
+  },
+  {
+    "id": 36029,
+    "nombre": "Moaña"
+  },
+  {
+    "id": 36030,
+    "nombre": "Mondariz"
+  },
+  {
+    "id": 36031,
+    "nombre": "Mondariz-Balneario"
+  },
+  {
+    "id": 36032,
+    "nombre": "Moraña"
+  },
+  {
+    "id": 36033,
+    "nombre": "Mos"
+  },
+  {
+    "id": 36034,
+    "nombre": "As Neves"
+  },
+  {
+    "id": 36035,
+    "nombre": "Nigrán"
+  },
+  {
+    "id": 36036,
+    "nombre": "Oia"
+  },
+  {
+    "id": 36037,
+    "nombre": "Pazos de Borbén"
+  },
+  {
+    "id": 36041,
+    "nombre": "Poio"
+  },
+  {
+    "id": 36043,
+    "nombre": "Ponte Caldelas"
+  },
+  {
+    "id": 36042,
+    "nombre": "Ponteareas"
+  },
+  {
+    "id": 36044,
+    "nombre": "Pontecesures"
+  },
+  {
+    "id": 36038,
+    "nombre": "Pontevedra"
+  },
+  {
+    "id": 36039,
+    "nombre": "O Porriño"
+  },
+  {
+    "id": 36040,
+    "nombre": "Portas"
+  },
+  {
+    "id": 36045,
+    "nombre": "Redondela"
+  },
+  {
+    "id": 36046,
+    "nombre": "Ribadumia"
+  },
+  {
+    "id": 36047,
+    "nombre": "Rodeiro"
+  },
+  {
+    "id": 36048,
+    "nombre": "O Rosal"
+  },
+  {
+    "id": 36049,
+    "nombre": "Salceda de Caselas"
+  },
+  {
+    "id": 36050,
+    "nombre": "Salvaterra de Miño"
+  },
+  {
+    "id": 36051,
+    "nombre": "Sanxenxo"
+  },
+  {
+    "id": 36052,
+    "nombre": "Silleda"
+  },
+  {
+    "id": 36053,
+    "nombre": "Soutomaior"
+  },
+  {
+    "id": 36054,
+    "nombre": "Tomiño"
+  },
+  {
+    "id": 36055,
+    "nombre": "Tui"
+  },
+  {
+    "id": 36056,
+    "nombre": "Valga"
+  },
+  {
+    "id": 36057,
+    "nombre": "Vigo"
+  },
+  {
+    "id": 36059,
+    "nombre": "Vila de Cruces"
+  },
+  {
+    "id": 36058,
+    "nombre": "Vilaboa"
+  },
+  {
+    "id": 36060,
+    "nombre": "Vilagarcía de Arousa"
+  },
+  {
+    "id": 36061,
+    "nombre": "Vilanova de Arousa"
+  }
+]

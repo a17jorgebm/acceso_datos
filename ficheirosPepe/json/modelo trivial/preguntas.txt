@@ -1,0 +1,14 @@
+        Pregunta preguntaTrueFalse = new PreguntaBoolean("¿Java es un lenguaje de programación orientado a objetos?", true);
+        preguntaTrueFalse.setCategoria(new Categoria("Programación"))
+                .setTipoPregunta(TipoPregunta.BOOLEAN)
+                .setDificultad(Dificultad.EASY);
+//        System.out.println(preguntaTrueFalse);
+
+        Pregunta preguntaMultiple = new PreguntaMultiple("¿Cuál de los siguientes lenguajes de programación es orientado a objetos puro?");
+        ((PreguntaMultiple)preguntaMultiple).addOpcion(new Opcion("Java", true))
+                .addOpcion(new Opcion("C", false))
+                .addOpcion(new Opcion("Python", true))
+                .addOpcion(new Opcion("Modula-2", true))
+                .setCategoria(new Categoria("Programación"))
+                .setTipoPregunta(TipoPregunta.MULTIPLE)
+                .setDificultad(Dificultad.EASY);

@@ -1,0 +1,1 @@
+Los archivos *.tar son copias de seguridad de postgres

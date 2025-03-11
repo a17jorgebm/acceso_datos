@@ -1,0 +1,428 @@
+{
+  "provincias": [
+    {
+      "nombre": "A Coruña",
+      "concellos": [
+        {
+          "idConcello": 15001,
+          "nombre": "Abegondo"
+        },
+        {
+          "idConcello": 15002,
+          "nombre": "Ames"
+        },
+        {
+          "idConcello": 15003,
+          "nombre": "Aranga"
+        },
+        {
+          "idConcello": 15004,
+          "nombre": "Ares"
+        },
+        {
+          "idConcello": 15005,
+          "nombre": "Arteixo"
+        },
+        {
+          "idConcello": 15006,
+          "nombre": "Arzúa"
+        },
+        {
+          "idConcello": 15007,
+          "nombre": "A Baña"
+        },
+        {
+          "idConcello": 15008,
+          "nombre": "Bergondo"
+        },
+        {
+          "idConcello": 15009,
+          "nombre": "Betanzos"
+        },
+        {
+          "idConcello": 15010,
+          "nombre": "Boimorto"
+        },
+        {
+          "idConcello": 15011,
+          "nombre": "Boiro"
+        },
+        {
+          "idConcello": 15012,
+          "nombre": "Boqueixón"
+        },
+        {
+          "idConcello": 15013,
+          "nombre": "Brión"
+        },
+        {
+          "idConcello": 15014,
+          "nombre": "Cabana de Bergantiños"
+        },
+        {
+          "idConcello": 15015,
+          "nombre": "Cabanas"
+        },
+        {
+          "idConcello": 15016,
+          "nombre": "Camariñas"
+        },
+        {
+          "idConcello": 15017,
+          "nombre": "Cambre"
+        },
+        {
+          "idConcello": 15018,
+          "nombre": "A Capela"
+        },
+        {
+          "idConcello": 15019,
+          "nombre": "Carballo"
+        },
+        {
+          "idConcello": 15901,
+          "nombre": "Cariño"
+        },
+        {
+          "idConcello": 15020,
+          "nombre": "Carnota"
+        },
+        {
+          "idConcello": 15021,
+          "nombre": "Carral"
+        },
+        {
+          "idConcello": 15022,
+          "nombre": "Cedeira"
+        },
+        {
+          "idConcello": 15023,
+          "nombre": "Cee"
+        },
+        {
+          "idConcello": 15024,
+          "nombre": "Cerceda"
+        },
+        {
+          "idConcello": 15025,
+          "nombre": "Cerdido"
+        },
+        {
+          "idConcello": 15027,
+          "nombre": "Coirós"
+        },
+        {
+          "idConcello": 15028,
+          "nombre": "Corcubión"
+        },
+        {
+          "idConcello": 15029,
+          "nombre": "Coristanco"
+        },
+        {
+          "idConcello": 15030,
+          "nombre": "A Coruña"
+        },
+        {
+          "idConcello": 15031,
+          "nombre": "Culleredo"
+        },
+        {
+          "idConcello": 15032,
+          "nombre": "Curtis"
+        },
+        {
+          "idConcello": 15033,
+          "nombre": "Dodro"
+        },
+        {
+          "idConcello": 15034,
+          "nombre": "Dumbría"
+        },
+        {
+          "idConcello": 15035,
+          "nombre": "Fene"
+        },
+        {
+          "idConcello": 15036,
+          "nombre": "Ferrol"
+        },
+        {
+          "idConcello": 15037,
+          "nombre": "Fisterra"
+        },
+        {
+          "idConcello": 15038,
+          "nombre": "Frades"
+        },
+        {
+          "idConcello": 15039,
+          "nombre": "Irixoa"
+        },
+        {
+          "idConcello": 15041,
+          "nombre": "A Laracha"
+        },
+        {
+          "idConcello": 15040,
+          "nombre": "Laxe"
+        },
+        {
+          "idConcello": 15042,
+          "nombre": "Lousame"
+        },
+        {
+          "idConcello": 15043,
+          "nombre": "Malpica de Bergantiños"
+        },
+        {
+          "idConcello": 15044,
+          "nombre": "Mañón"
+        },
+        {
+          "idConcello": 15045,
+          "nombre": "Mazaricos"
+        },
+        {
+          "idConcello": 15046,
+          "nombre": "Melide"
+        },
+        {
+          "idConcello": 15047,
+          "nombre": "Mesía"
+        },
+        {
+          "idConcello": 15048,
+          "nombre": "Miño"
+        },
+        {
+          "idConcello": 15049,
+          "nombre": "Moeche"
+        },
+        {
+          "idConcello": 15050,
+          "nombre": "Monfero"
+        },
+        {
+          "idConcello": 15051,
+          "nombre": "Mugardos"
+        },
+        {
+          "idConcello": 15052,
+          "nombre": "Muxía"
+        },
+        {
+          "idConcello": 15053,
+          "nombre": "Muros"
+        },
+        {
+          "idConcello": 15054,
+          "nombre": "Narón"
+        },
+        {
+          "idConcello": 15055,
+          "nombre": "Neda"
+        },
+        {
+          "idConcello": 15056,
+          "nombre": "Negreira"
+        },
+        {
+          "idConcello": 15057,
+          "nombre": "Noia"
+        },
+        {
+          "idConcello": 15058,
+          "nombre": "Oleiros"
+        },
+        {
+          "idConcello": 15059,
+          "nombre": "Ordes"
+        },
+        {
+          "idConcello": 15060,
+          "nombre": "Oroso"
+        },
+        {
+          "idConcello": 15061,
+          "nombre": "Ortigueira"
+        },
+        {
+          "idConcello": 15062,
+          "nombre": "Outes"
+        },
+        {
+          "idConcello": 15902,
+          "nombre": "Oza-Cesuras"
+        },
+        {
+          "idConcello": 15064,
+          "nombre": "Paderne"
+        },
+        {
+          "idConcello": 15065,
+          "nombre": "Padrón"
+        },
+        {
+          "idConcello": 15066,
+          "nombre": "O Pino"
+        },
+        {
+          "idConcello": 15067,
+          "nombre": "Pobra do Caramiñal"
+        },
+        {
+          "idConcello": 15068,
+          "nombre": "Ponteceso"
+        },
+        {
+          "idConcello": 15069,
+          "nombre": "Pontedeume"
+        },
+        {
+          "idConcello": 15070,
+          "nombre": "As Pontes de García Rodríguez"
+        },
+        {
+          "idConcello": 15071,
+          "nombre": "Porto do Son"
+        },
+        {
+          "idConcello": 15072,
+          "nombre": "Rianxo"
+        },
+        {
+          "idConcello": 15073,
+          "nombre": "Ribeira"
+        },
+        {
+          "idConcello": 15074,
+          "nombre": "Rois"
+        },
+        {
+          "idConcello": 15075,
+          "nombre": "Sada"
+        },
+        {
+          "idConcello": 15076,
+          "nombre": "San Sadurniño"
+        },
+        {
+          "idConcello": 15077,
+          "nombre": "Santa Comba"
+        },
+        {
+          "idConcello": 15078,
+          "nombre": "Santiago de Compostela"
+        },
+        {
+          "idConcello": 15079,
+          "nombre": "Santiso"
+        },
+        {
+          "idConcello": 15080,
+          "nombre": "Sobrado"
+        },
+        {
+          "idConcello": 15081,
+          "nombre": "As Somozas"
+        },
+        {
+          "idConcello": 15082,
+          "nombre": "Teo"
+        },
+        {
+          "idConcello": 15083,
+          "nombre": "Toques"
+        },
+        {
+          "idConcello": 15084,
+          "nombre": "Tordoia"
+        },
+        {
+          "idConcello": 15085,
+          "nombre": "Touro"
+        },
+        {
+          "idConcello": 15086,
+          "nombre": "Trazo"
+        },
+        {
+          "idConcello": 15087,
+          "nombre": "Valdoviño"
+        },
+        {
+          "idConcello": 15088,
+          "nombre": "Val do Dubra"
+        },
+        {
+          "idConcello": 15089,
+          "nombre": "Vedra"
+        },
+        {
+          "idConcello": 15090,
+          "nombre": "Vilasantar"
+        },
+        {
+          "idConcello": 15091,
+          "nombre": "Vilarmaior"
+        },
+        {
+          "idConcello": 15092,
+          "nombre": "Vimianzo"
+        },
+        {
+          "idConcello": 15093,
+          "nombre": "Zas"
+        }
+      ]
+    },
+    {
+      "nombre": "Lugo",
+      "concellos": [
+        {
+          "idConcello": 27001,
+          "nombre": "Abadín"
+        },
+        {
+          "idConcello": 27002,
+          "nombre": "Alfoz"
+        },
+        {
+          "idConcello": 27003,
+          "nombre": "Antas de Ulla"
+        },
+        {
+          "idConcello": 27004,
+          "nombre": "Baleira"
+        },
+        {
+          "idConcello": 27901,
+          "nombre": "Baralla"
+        },
+        {
+          "idConcello": 27005,
+          "nombre": "Barreiros"
+        },
+        {
+          "idConcello": 27006,
+          "nombre": "Becerreá"
+        },
+        {
+          "idConcello": 27007,
+          "nombre": "Begonte"
+        },
+        {
+          "idConcello": 27008,
+          "nombre": "Bóveda"
+        },
+        {
+          "idConcello": 27902,
+          "nombre": "Burela"
+        }
+        // (continuar con el resto de los concellos de Lugo)
+      ]
+    }
+    // (agregar los datos de las provincias de Ourense y Pontevedra de forma similar)
+  ]
+}

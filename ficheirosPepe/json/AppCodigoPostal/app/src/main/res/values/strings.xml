@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Búsqueda de códidos postales</string>
+    <string name="codigo_postal">15705</string>
+    <string name="default_query_hint">15705</string>
+</resources>

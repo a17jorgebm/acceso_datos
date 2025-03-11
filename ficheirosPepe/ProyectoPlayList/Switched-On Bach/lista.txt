@@ -1,0 +1,22 @@
+ El volumen de la unidad E es Pepe Calo
+ El n£mero de serie del volumen es: 2299-244C
+
+ Directorio de E:\38 - Audios\mp3\Switched-On Bach
+
+23/11/2022  00:25    <DIR>          .
+23/11/2022  00:25    <DIR>          ..
+23/11/2022  00:19         5.811.500 01 Sinfonia to Cantata No. 29.mp3
+23/11/2022  00:19         4.292.309 02 Air on the G String.mp3
+23/11/2022  00:20         1.213.746 03 Two-Part Invention in F major.mp3
+23/11/2022  00:20         2.528.133 04 Two-Part Invention in B-flat major.mp3
+23/11/2022  00:20         1.460.237 05 Two-Part Invention in D minor.mp3
+23/11/2022  00:21         5.017.171 06 Jesu, Joy of Man's Desiring.mp3
+23/11/2022  00:22        12.072.597 07 Prelude and Fugue No. 7 (from Well-Tempered Clavier, book I).mp3
+23/11/2022  00:22         4.688.094 08 Prelude and Fugue No. 2 (from Well-Tempered Clavier, book I).mp3
+23/11/2022  00:23         6.127.477 09 Chorale Prelude Wachet Auf.mp3
+23/11/2022  00:24        10.894.221 10 Brandenburg Concerto No. 3 I. Allegro.mp3
+23/11/2022  00:24         4.789.720 11 Brandenburg Concerto No. 3 II. Andante.mp3
+23/11/2022  00:25         8.652.397 12 Brandenburg Concerto No. 3 III. Allegro.mp3
+11/12/2023  19:57                41 lista.txt
+              13 archivos     67.547.643 bytes
+               2 dirs  441.292.029.952 bytes libres

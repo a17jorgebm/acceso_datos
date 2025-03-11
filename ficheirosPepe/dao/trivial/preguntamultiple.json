@@ -1,0 +1,17 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science: Computers",
+      "question": "What is the correct term for the metal object in between the CPU and the CPU fan within a computer system?",
+      "correct_answer": "Heat Sink",
+      "incorrect_answers": [
+        "CPU Vent",
+        "Temperature Decipator",
+        "Heat Vent"
+      ]
+    }
+  ]
+}

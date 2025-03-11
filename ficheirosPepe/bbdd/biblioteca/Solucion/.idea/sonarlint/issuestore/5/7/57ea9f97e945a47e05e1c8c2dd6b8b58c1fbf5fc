@@ -1,0 +1,28 @@
+
+a
+java:S2583‘"CChange this condition so that it does not always evaluate to "true"(¡ææú8‡û’ş1
+H
+java:S1874"+Remove this use of "URL"; it is deprecated.(¥ĞæÊ8º‡û’ş1
+G	java:S106"+Replace this use of System.err by a logger.(êèé 8¼‡û’ş1
+L	java:S106"+Replace this use of System.err by a logger.(Œ•æÿÿÿÿÿ8¾‡û’ş1
+]	java:S125-"<This block of commented-out lines of code should be removed.(â¹»îùÿÿÿÿ8Ç‡û’ş1
+]	java:S1254"<This block of commented-out lines of code should be removed.(ËÄÒ¬şÿÿÿÿ8Ê‡û’ş1
+]	java:S125E"<This block of commented-out lines of code should be removed.(ö¯—Ëúÿÿÿÿ8Ê‡û’ş1
+W	java:S125I"<This block of commented-out lines of code should be removed.(“©´&8Ë‡û’ş1
+W	java:S125Y"<This block of commented-out lines of code should be removed.(“©´&8Ë‡û’ş1
+X	java:S125k"<This block of commented-out lines of code should be removed.(ó¶Å8Ë‡û’ş1
+G	java:S106u"+Replace this use of System.out by a logger.(è÷»×8Ğ‡û’ş1
+L	java:S106w"+Replace this use of System.out by a logger.(ÍúÎÿÿÿÿÿ8Ò‡û’ş1
+L	java:S106y"+Replace this use of System.out by a logger.(ç«­Öúÿÿÿÿ8Ò‡û’ş1
+L	java:S106{"+Replace this use of System.out by a logger.(Ğ‚Öÿşÿÿÿÿ8Ô‡û’ş1
+L	java:S106~"+Replace this use of System.out by a logger.(›øÈÑûÿÿÿÿ8Õ‡û’ş1
+M	java:S106ƒ"+Replace this use of System.out by a logger.(¼ˆßÖûÿÿÿÿ8×‡û’ş1
+H	java:S106…"+Replace this use of System.out by a logger.(¹Íò8Ù‡û’ş1
+H	java:S106‰"+Replace this use of System.out by a logger.(Öî¶ª8Û‡û’ş1
+M	java:S106‹"+Replace this use of System.out by a logger.(“åç£üÿÿÿÿ8Ü‡û’ş1
+M	java:S106"+Replace this use of System.out by a logger.(çÛÕºÿÿÿÿÿ8İ‡û’ş1
+H	java:S106’"+Replace this use of System.out by a logger.(—Û§½8Ş‡û’ş1
+H	java:S106”"+Replace this use of System.out by a logger.(Šòàñ8ß‡û’ş1
+p
+java:S1128
+"SRemove this unused import 'com.pepinho.programacion.biblioteca.view.BookViewCutre'.(ÇÙó8à‡û’ş1

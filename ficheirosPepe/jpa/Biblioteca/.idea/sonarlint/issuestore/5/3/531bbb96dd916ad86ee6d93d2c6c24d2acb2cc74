@@ -1,0 +1,10 @@
+
+K
+java:S5411Ó"(Use a primitive boolean expression here.(¡ËÇ°ùÿÿÿÿ8öõú’ş1
+X	java:S125"<This block of commented-out lines of code should be removed.(ı«ã¾8©öú’ş1
+M	java:S106"+Replace this use of System.err by a logger.(ëùåıúÿÿÿÿ8Ìöú’ş1
+M	java:S106Ÿ"+Replace this use of System.err by a logger.(¬ğûµúÿÿÿÿ8Íöú’ş1
+M	java:S106®"+Replace this use of System.err by a logger.(†¨ß´øÿÿÿÿ8Ñöú’ş1
+F	java:S108·")Either remove or fill this block of code.(ï­£Ä8×öú’ş1
+M
+java:S1068"+Remove this unused "contido" private field.(¡¯¬èÿÿÿÿÿ8Şöú’ş1
